@@ -1,0 +1,70 @@
+<!--pages/ticket-payment/ticket-payment.wxml-->
+<view class="con">
+  <!-- 订单详情开始 -->
+  <view class="section">
+    <view class="title">
+      <text>门票信息</text>
+    </view>
+    <view class="info">
+      <view class="item">
+        <text>门票名称：</text>
+        <text>{{title}}</text>
+      </view>
+      <view class="item">
+        <text>门票数量：</text>
+        <text> {{dingnum}}张</text>
+      </view>
+      <view class="item">
+        <text>出游日期：</text>
+        <text>{{usedate}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 订单详情结束 -->
+  <!-- 服务详情开始 -->
+  <view class="section">
+    <view class="title">
+      <text>游客信息</text>
+    </view>
+    <view class="info">
+      <view class="item">
+        <text>订票人：</text>
+        <text>{{linkman}}</text>
+      </view>
+      <view class="item">
+        <text>联系方式：</text>
+        <text>{{linktel}}</text>
+      </view>
+      <view class="">
+        <text>备注说明：</text>
+        <text>{{remark}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 服务详情结束 -->
+  <!-- 支付方式开始 -->
+  <view class="section">
+    <view class="title">
+      <text>支付方式</text>
+    </view>
+    <view class="info">
+      <view class="item item3">
+        <text>微信支付：</text>
+        <icon type="success" size="25" />
+      </view>
+    </view>
+  </view>
+  <!-- 支付方式结束 -->
+  <!-- 底部部分开始 -->
+  <view class="confirm">
+
+    <view class="text2">
+      <text>待支付：</text> <text style='color:#e64340'>￥</text>
+      <text class="red">{{price}}</text>
+    </view>
+    <navigator url="../paySuccess/paySuccess">
+      <view class="text3" bindtap="payoff">确认支付</view>
+    </navigator>
+  </view>
+  <!-- 底部部分结束 -->
+</view>

@@ -1,0 +1,17 @@
+<!--pages/paySuccess/paySuccess.wxml-->
+ <view class="section">
+    
+    <view class="info">
+     <icon type="success" size="25" />
+      <view class="item ">
+      
+        <text>支付成功</text>
+       
+      </view>
+    </view>
+  </view>
+<view class='back'>
+   
+ <button type="primary"  bindtap="back"> 返回首页 </button>
+
+</view>

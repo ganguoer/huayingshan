@@ -1,0 +1,98 @@
+<!-- <!--pages/eat-item/eat-item.wxml-->
+<view class="slide">
+  <swiper autoplay="true" interval="4000" duration="1000" circular="true">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150" mode="aspectFill" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- <image class="eat-item-img" src="http://192.168.2.4:8080/mapImages/image/home/shilin.png"></image> -->
+
+<view class='eat-content'>
+  <text>
+   开放时间: 7:00-18:00（取票时间：9:00以后）
+  </text>
+</view>
+<view class='eat-content'>
+  <text>
+   电话: 0871-67711439;0871-67710699
+  </text>
+</view>
+<view class='eat-content'>
+  <text>
+   推荐游玩时间： 3-10月
+  </text>
+</view>
+<view class='eat-content'>
+  <text style='line-height:42rpx'>
+  景点概況：
+ 石林，位于云南省昆明市石林彝族自治县境内，距离省会昆明78公里，“冬无严寒、夏无酷暑、四季如春”，是世界唯一位于亚热带高原地区的喀斯特地貌风景区，素有“天下第一奇观”“石林博物馆”的美誉，是首批中国国家重点风景名胜区、中国国家地质公园、世界地质公园，与北京故宫、西安兵马俑、桂林山水齐名，成为中国四大旅游胜地之一。石林具有世界上最奇特的喀斯特地貌，这里在约3亿年前还是一片泽国，经过漫长的地质演变，终于形成了现今极为珍贵 的地质遗迹。景区是一座名副其实的由岩石组成的“森林”，穿行其间，但见怪石林立，突兀峥嵘，姿态各异。壁峰之间，翠蔓挂石，金竹挺秀，山花香溢，灵禽和鸣，一派生机盎然。
+  </text>
+
+
+</view>
+<view class='eat-content'>
+  <text  style='line-height:42rpx'>
+  交通攻略：
+  在昆明东部汽车客运站乘坐到石林景区的旅游直通车，票价29元/人/次（含保险1元），8:00-18:30每30分钟一班，车程约2小时。
+  </text>
+</view>
+<view class='eat-content' style='display:flex;'>
+  <text class='spotAddress' style='font-size:24rpx;'>
+  地址： 云南省昆明市石林彝族自治县
+  </text>
+  <!-- <image class='xy' src='../../image/home/map.png' style='padding-top:30rpx;'></image> -->
+</view>
+<!-- <navigator class='address'>
+  <text class='spotAddress'>交通攻略：昆明市—环城东路—匝道—昆洛路—广昆高速公路—昆石高速公路—终点。</text>
+    <image class='rightArrow' src='../../image/home/downArrow.png'></image>  
+</navigator> -->
+<!-- <navigator class='address'>
+  <text class='spotAddress'>地址： 云南省昆明市石林彝族自治县</text>
+  <image class='xy' src='../../image/home/map.png'></image>
+</navigator> -->
+
+<!-- <view class='row'>
+</view>
+<view class='game-ticket'>
+  门票
+  <image class='ticket' src='../../image/home/ticket.png'></image>
+</view>
+<view class='travel-content'>
+  <view class='price'>成人票</view>
+  <text class='price1'>￥<text class='price2'>175</text>
+  <text class='price3'>/人</text></text>
+   <navigator class='reserve' url='/pages/member-register/member-register'> 预订 </navigator> 
+</view> -->
+
+<!-- <view class='travel-content'>
+  <view class='price'>学生票</view>
+  <text class='price1'>￥<text class='price2'>87.5</text>
+  <text class='price3'>/人</text></text>
+  <navigator class='reserve' url='/pages/member-register/member-register'> 预订 </navigator>
+</view> -->
+
+ <view class='row'>
+</view> 
+
+<!-- <view class='comment-title'>
+  用户评论（72）
+</view>
+<view class='eat-comment-area'>
+  <view class='eat-comment'>
+    <image class='headPic' src='../../image/home/headPic.png'></image>
+    <view class='comment-mid'>
+      <text class='pass-name'>A***s</text>
+      <image class='comment-star' src='../../image/home/star.png' style='display:block'></image>
+    </view>
+    <text class='comment-time'>2017-08-29 14:29</text>
+  </view>
+  <view class='comment-content'>风景不错，好玩！</view>
+</view> -->
+<view>
+  <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" circles="{{circles}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange"
+show-location style="width: 100%; height: 300px;"></map>
+</view>

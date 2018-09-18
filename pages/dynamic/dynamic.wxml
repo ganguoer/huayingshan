@@ -1,0 +1,18 @@
+<import src="../../libs/template/dynamicItem.wxml"/>
+<view bindtouchend="pullListEnd" id="ListBody">
+  <view class="tab-news-type">
+      <view class='news' bindtap = "getSelType" data-selid = "7" style='{{newsActive == 7 ? "color#666" : "color:#ddd"}}'>景区动态</view>
+      <view class='research' bindtap = "getSelType" data-selid = "8" style='{{newsActive == 8 ? "color#666" : "color:#ddd"}}'>近期活动</view>
+      <view class='cuxiao' bindtap = "getSelType" data-selid = "9" style='{{newsActive == 9 ? "color#666" : "color:#ddd"}}'>营销活动</view>
+        <view class='shuju' bindtap = "getSelType" data-selid = "10" style='{{newsActive == 10 ? "color#666" : "color:#ddd"}}'>大数据</view> 
+      <view class="line" style='left:{{posX}}'>
+        
+      </view>
+  </view>
+  <view class="container">
+    <block  wx:for="{{items}}" wx:key = "*this" wx:for-item = "item">
+      <template is = "dynamicItem" data = "{{item}}"></template> 
+    </block>
+  </view>
+  <view class="getMore">{{getMore ?  "下拉获取更多" : "已加载全部"}}</view>
+</view>

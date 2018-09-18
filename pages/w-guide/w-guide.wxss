@@ -1,0 +1,2 @@
+/* pages/w-guide/w-guide.wxss */
+@import "../w-hotel/w-hotel.wxss";

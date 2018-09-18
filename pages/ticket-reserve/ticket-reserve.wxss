@@ -1,0 +1,174 @@
+/* pages/ticket-reserve/ticket-reserve.wxss */
+page{
+   background-color:#eee;
+}
+.name{
+  border-bottom:1rpx solid #eee;
+  padding: 30rpx 0rpx;
+  background: #fff;
+}
+.info{
+ padding: 0rpx 29rpx;
+ font-size: 28rpx;
+}
+
+.clearfix {
+  overflow: auto;
+ _zoom:1;
+}
+.data{
+  width: 100%;
+  padding: 22rpx 0;
+  border-bottom:1rpx solid #eee;
+  background: #fff;
+  display: flex
+}
+
+.textss{
+  font-size: 32rpx;
+  padding:0 20rpx;
+  
+}
+.txt{
+  font-size: 26rpx;
+  padding:0rpx 29rpx;
+  flex: 1;
+  padding-top: 10rpx
+}
+picker{
+  flex: 3;
+  color: #666;
+}
+
+.num{
+  border-bottom:1rpx solid #eee;
+  padding: 20rpx 30rpx;
+  display: flex;
+  flex: 1;
+  background: #fff
+}
+.room{
+   flex: 1;
+  font-size: 26rpx;
+  padding-top: 12rpx
+}
+
+/*主容器*/
+.stepper { 
+  width: 80px; 
+  height: 26px; 
+  /*给主容器设一个边框*/
+  border: 1px solid #ccc; 
+  border-radius: 3px; 
+  margin:0 auto; 
+} 
+  
+/*加号和减号*/
+.stepper text { 
+  width: 19px; 
+  line-height: 26px; 
+  text-align: center; 
+  float: left; 
+ 
+} 
+  
+/*数值*/
+.stepper input { 
+  width: 40px; 
+  height: 26px; 
+  float: left; 
+  margin: 0 auto; 
+  text-align: center; 
+  font-size: 12px; 
+  /*给中间的input设置左右边框即可*/
+  border-left: 1px solid #ccc; 
+  border-right: 1px solid #ccc; 
+} 
+  
+/*普通样式*/
+.stepper .normal{ 
+  color: black; 
+} 
+  
+/*禁用样式*/
+.stepper .disabled{ 
+  color: #ccc; 
+} 
+
+.bg{
+  width: 100%;
+  height: 40rpx;
+}
+
+.user{
+  display: flex;
+  font-size: 26rpx;
+  padding: 26rpx 30rpx;
+  border-bottom:1rpx solid #eee;
+  background: #fff
+}
+label{
+  padding-top: 9rpx;
+  padding-right: 30rpx;
+}
+
+textarea{
+  width:480rpx;
+  padding-top: 11rpx;
+}
+button[type="warn"]{
+  font-size: 30rpx;
+}
+
+.pay{
+  font-size: 26rpx;
+  padding: 26rpx 30rpx;
+  border-top: 1rpx solid #eee;
+  border-bottom:1rpx solid #eee;
+  background: #fff
+}
+.payl{
+  float: left
+}
+.payr{
+  float: right
+}
+
+.bottom{
+ position: absolute;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background: #fff;
+}
+.botl{
+  float: left;
+  width: 40%;
+  height: 76rpx;
+  line-height: 76rpx;
+  display: flex;
+   padding-left:30rpx;
+   margin:20rpx 0; 
+}
+.word{
+  font-size: 26rpx
+}
+.money{
+  font-size: 30rpx;
+  color: #E64340;
+  flex: 1;
+  padding-top: 11rpx;
+}
+.botr{
+  float: right;
+  width: 50%;
+  margin:20rpx 0; 
+}
+button[type="warn"] {
+margin-right: 30rpx;
+
+}
+
+
+
+

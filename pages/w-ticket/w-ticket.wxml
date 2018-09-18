@@ -1,0 +1,46 @@
+
+<!--pages/w-ticket/w-ticket.wxml-->
+<view bindtouchend="pullListEnd" id="ListBody">
+<!--搜索部分 -->
+<view class="search-box">
+   <image class='icon-search' src='../../image/home/search.png'></image>
+  <input class="search-input" placeholder="请输入景点名称" value="{{name}}" placeholder-class="placeholder-style" bindinput="searchName" />
+  <button class="search" disabled="{{disabled}}" bindtap='searchList'>搜索</button>
+</view>
+
+<!--列表部分  -->
+<view class="container" style="padding:0rpx">
+  <!--垂直滚动，这里必须设置高度-->
+  <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" class="list" bindscrolltolower="bindDownLoad" bindscroll="scroll">
+      <block wx:for="{{list}}">
+    <view class="up-list">
+      <view class="up-list-item">
+        <navigator url="../w-ticket-details/w-ticket-details?id={{item.aid}}">
+          <view class="item-desc-container">
+            <image class="item-img" src="https://shilin.citgroup.cn{{item.litpic}}"></image>
+            <view class="info-view">
+              <text class="title">{{item.title}}</text>
+              <view class="item-footer">
+                <view class="item-footer-author">
+                  满意度：
+                  <text class="satisfy">{{item.satisfyscore}}%</text>
+                  <text class='type'>{{item.grade}}A景区</text>
+                </view>
+                <view class="item-footer-view">
+                  <text class='rmb'>￥</text>
+                  <text class='number'>{{item.price}}</text>起
+                </view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+
+      </view>
+    </view>
+  </block>
+    <view class="getMore">{{getMore ?  "下拉获取更多" : "已加载全部"}}</view>
+  </scroll-view>
+ 
+</view>
+
+</view>

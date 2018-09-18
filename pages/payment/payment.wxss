@@ -1,0 +1,83 @@
+/* pages/tijiao/tijiao.wxss */
+page {  
+  display: block;  
+  min-height: 100%;  
+  background-color:#eee;    
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  color:#353535;
+} 
+.section{
+	background-color: #fff;
+	margin-bottom:50rpx;
+	padding:30rpx;
+}
+
+
+.title{
+	border-bottom:2rpx solid #eee;
+	height:50rpx;
+	line-height: 50rpx;
+	font-size: 27rpx;
+	margin-bottom: 10rpx;
+}
+.item{
+	height:60rpx;
+	line-height: 60rpx;
+}
+.item2{
+	margin:10rpx 0 ;
+    align-items: center;
+    line-height: 60rpx;
+}
+
+.time{float:left;}
+.item2 .choose{
+    float:right;
+    display:flex;
+	width:300rpx;
+
+}
+.item2 image{
+  width:50rpx;
+  margin:0 10rpx;
+}
+
+
+.item3{
+	font-size:35rpx;
+	display: flex;
+    justify-content: space-between;
+}
+
+.confirm{
+	height:100rpx;
+	position: absolute;
+	bottom: 0;
+	width:100%;
+	background-color: #fff;
+	font-size: 40rpx;
+}
+.confirm .text1{
+	margin-left:20rpx;
+	float:left;
+	font-size: 35rpx;
+	line-height:100rpx;
+}
+.confirm .text2{
+	margin-left:20rpx;
+	float:left;
+	font-size: 35rpx;
+	line-height:100rpx;
+}
+.text3{
+	text-align: center;
+	color:#FFFFFF;
+  background-color:#E64340;
+	width:40%;
+	float: right;
+	line-height: 100rpx;
+}
+.red{
+	color:#e64340;
+}

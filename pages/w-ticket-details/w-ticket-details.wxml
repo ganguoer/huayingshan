@@ -1,0 +1,62 @@
+<!--pages/w-ticket-details/w-ticket-details.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+
+<view class='d-top'>
+  <image class='ticket-details' src='https://shilin.citgroup.cn{{info1.litpic}}'></image>
+</view>
+<view class='address'>
+  <image class='add' src='../../image/w-mall/address.png'></image>
+  <text>{{info1.address}}</text>
+  <!-- <image class='arrow-right' src='../../image/w-mall/arrow-right.png'></image> -->
+</view>
+<view class='address' >
+  <image class='theme' src='../../image/w-mall/theme.png'></image>
+  <text>景区主题：{{info1.sellpoint}}</text>
+  
+</view>
+<view class='address'>
+  <image class='ticket' src='../../image/w-mall/ticket.png'></image>
+  <text>取票方式：{{info1.getway}}</text>
+</view>
+<!--票价  -->
+<view class='bg'></view>
+<view class='ticket'>
+  <view class='top'>
+    <view class='border'>门票</view>
+  </view>
+  <block wx:for="{{list}}">
+  <view class='content'>
+    <view class='l'>
+      <text class='subtitle'>{{info1.title}}({{item.title}})</text>
+      <view class='color'>
+        <image class='right' src='../../image/w-mall/right.png'></image>
+        <text class='sub-det'>支付方式：全款支付</text>
+      </view>
+      <!-- <text class='sub-det known'>购买须知 ></text> -->
+    </view>
+    <view class='r'>
+      <text class='rmb'>￥</text>
+      <text class='number'>{{info1.price}}</text>
+      <navigator class='pay' url="/pages/navigate/navigate" hover-class="none">在线支付</navigator>
+      <navigator class='reserve' url="/pages/ticket-reserve/ticket-reserve?title={{info1.title}}({{item.title}})&price={{info1.price}}&productid={{info1.aid}}&suitid={{info3.id}}" hover-class="none">预订</navigator>
+    </view>
+  </view>
+  </block>
+</view>
+
+
+<view class='bg'></view>
+<view class='ticket'>
+  <view class='top'>
+    <view class='border'>门票信息</view>
+  </view>
+</view>
+  
+    <view class='txt'>
+      <template class="content" is="wxParse" data="{{wxParseData:booknotice.nodes}}" />
+    </view>
+
+    <view class='txt'>
+      <template class="content" is="wxParse" data="{{wxParseData:content.nodes}}" />
+      
+    </view>

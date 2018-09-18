@@ -1,0 +1,50 @@
+<!--pages/my/my.wxml-->
+<view class='top'>
+ <block wx:if="{{userinfo}}">  
+   <image class='head-logo' src="{{userinfo.avatarUrl}}"></image>
+    <view >{{userinfo.nickName}}</view>
+ </block>
+ <block wx:else>  
+    <button type="primary" bindtap= "reLoad" > 授权登陆 </button>
+ </block>
+</view>
+
+<view class='row'></view>
+<view class='order'  >
+  <text class='my-order'>我的订单</text>
+  <navigator class='check-all' url='/pages/order-list/order-list?id=0'>
+    查看全部订单
+    <image class='rightArrow' src='../../image/home/rightArrow.png'></image>
+ </navigator>
+</view>
+<view class='manage'>
+  <navigator url='/pages/order-list/order-list?id=1'>   
+      <image src='../../image/home/pay.png'></image>
+      <view>待付款</view>   
+  </navigator>
+  <navigator url='/pages/order-list/order-list?id=2'>    
+      <image src='../../image/home/finish.png'></image>
+      <view>已付款</view>    
+  </navigator>
+  <navigator url='/pages/order-list/order-list?id=3'>
+      <image src='../../image/home/refund.png'></image>
+      <view>已退款</view>
+  </navigator>
+</view>
+<!-- <view class='row'></view>
+<view class='order'>
+  <text class='my-order'>个人信息</text>
+  <navigator class='check-all' url='/pages/personal-information/personal-information'>
+    查看详情
+    <image class='rightArrow' src='../../image/home/rightArrow.png'></image>
+  </navigator>
+</view>
+
+<view class='row'></view>
+<view class='order'>
+  <text class='my-order'>消息</text>
+  <navigator class='check-all' url='/pages/message/message'>
+    查看详情
+    <image class='rightArrow' src='../../image/home/rightArrow.png'></image>
+  </navigator>
+</view> -->

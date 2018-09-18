@@ -1,0 +1,93 @@
+<!--pages/hotel-reserve/hotel-reserve.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class='user' style='display:none'>
+    <label>隐藏字段：</label>
+    <input type="text" name="mid" value='{{mid}}' />
+  </view>
+  <view class='name'>
+    <view class='part'>
+      <text class="hotel">酒店名称:</text>
+      <input class='info' type="text" name="title" value='{{title}}' focus="{{focus}}" />
+    </view>
+    <view class='part'>
+      <text class="hotel">房间类型:</text>
+      <input class='roomname' type="text" name="roomname" value='（{{roomname}}）' focus="{{focus}}" />
+    </view>
+  </view>
+  <view class="data demo clearfix">
+    <view class='left'>
+      <text class='txt'>入住日期</text>
+      <picker name="startdate" mode="date" value="{{startdate}}" start="2017-01-01" end="2030-12-31" bindchange="bindDateChange">
+        <view class="form_group">
+          <text class="textss" style="width:460rpx;text-align:left;">{{startdate}}</text>
+        </view>
+      </picker>
+    </view>
+    <view class='center'>
+      共{{totalNight}}晚
+    </view>
+    <view class='right'>
+      <text class='txt'>离店日期</text>
+      <picker name="leavedate" mode="date" value="{{leavedate}}" start="2017-01-01" end="2030-12-31" bindchange="bindDateChangeTwo">
+        <view class="form_group">
+          <text class="textss" style="width:460rpx;text-align:left;">{{leavedate}}</text>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class='num'>
+    <text class='room'>房间数量</text>
+    <!-- 主容器 -->
+    <view class="stepper">
+      <!-- 减号 -->
+      <text class="{{minusStatus}}" bindtap="bindMinus">-</text>
+      <!-- 数值 -->
+      <!-- <input type="number" name="dingnum" bindchange="bindManual" value="{{dingnum}}" /> -->
+      <input type="number" name="dingnum" id="myInput" bindblur="bindBlur" value="{{dingnum}}" />
+      <!-- 加号 -->
+      <text class="normal" bindtap="bindPlus">+</text>
+    </view>
+
+  </view>
+
+  <view class='bg'></view>
+
+  <view class='user'>
+    <label>用户名</label>
+    <input type="text" name="linkman" focus="{{focus}}" placeholder="请填写真实姓名" />
+  </view>
+  <view class='user'>
+    <label>手机号码</label>
+    <input type="number" name="linktel" focus="{{focus}}" placeholder="请填写手机号码" />
+  </view>
+
+  <view class='user'>
+    <label>备注说明</label>
+    <textarea name="remark" value='' bindblur="bindTextAreaBlur" auto-height maxlength='50' placeholder="请填写简短备注，不超过50字" />
+  </view>
+
+
+  <view class='bg'></view>
+
+  <view class='pay clearfix'>
+    <text class='payl'>付款方式</text>
+    <text class='payr'>全款支付</text>
+  </view>
+
+  <view style='display:none'>
+    <input class='info' type="text" name="hotelid" value='{{hotelid}}' focus="{{focus}}" />
+    <input class='info' type="text" name="suitid" value='{{suitid}}' focus="{{focus}}" />
+  </view>
+
+  <view class='bottom clearfix'>
+    <view class='botl'>
+      <text class='word'>金额：￥</text>
+      <input class='money' type="number" name="price" value='{{totalprice}}' focus="{{focus}}" />
+    </view>
+    <view class='botr'>
+      <button type="warn" bindtap="btnSubmit" style="width:50%;" formType="submit">提交订单</button>
+    </view>
+
+  </view>
+
+</form>

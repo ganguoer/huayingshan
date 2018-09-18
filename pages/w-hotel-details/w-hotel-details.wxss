@@ -1,0 +1,236 @@
+/* pages/w-hotel-details/w-hotel-details.wxss */
+view{
+  overflow: hidden;
+}
+.d-top {
+  width: 100%;
+  height: 432rpx;
+  position: relative
+}
+
+.hotel-details {
+  width: 100%;
+  height: 432rpx;
+}
+.opacity{
+  width: 100%;
+  height: 108rpx;
+  position: absolute;
+  bottom: 0rpx;
+  left: 0rpx;
+  z-index: 0;
+}
+.title {
+  color: #fff;
+  font-size: 30rpx;
+  position: absolute;
+  bottom: 20rpx;
+  left: 30rpx;
+  padding-right: 20rpx;
+}
+
+.type {
+  font-size: 24rpx;
+  margin-left: 20rpx;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  padding: 0 29rpx;
+}
+image.add{
+  width: 24rpx;
+   height: 29rpx; 
+   margin: 5rpx auto;
+   padding-right: 10rpx;
+}
+.board-item {
+  flex: 1;
+  display: flex;
+  padding: 20rpx 0;
+  border-bottom: 1px solid #eee;
+}
+.word{
+  flex: 1
+}
+.score{
+  color: #fabe00;
+  margin-right: 20rpx
+}
+.comment{
+  color: #8e8e8e;
+  font-size: 26rpx;
+
+}
+navigator{
+  color: #fabe00;
+  font-size: 32rpx;
+}
+navigator image{
+  width: 20rpx;
+  height: 36rpx;
+  overflow: hidden;
+  vertical-align: bottom
+}
+.address{
+  flex: 1;
+  font-size: 28rpx
+}
+/*入住酒店  */
+.bg{
+  background: #f5f5f5;
+  width: 100%;
+  height: 22rpx
+}
+.content{
+  /* height: 435rpx; */
+  background: #fff;
+}
+.data{
+  font-size: 28rpx;
+  padding: 20rpx 29rpx;
+  border-bottom:1rpx solid #eee;
+}
+
+
+/*  入住酒店列表  */
+.up-list{
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+   border-bottom: 1px #eaeaea solid;
+}
+
+.up-list-item{
+  padding: 20rpx 30rpx 0 30rpx;
+  width: 100%
+}
+
+.item-desc-container{
+  float: left;
+  padding-bottom: 20rpx;
+  width: 70%;
+  overflow: hidden;
+}
+
+.item-img{
+  max-width: 120rpx;
+  max-height: 120rpx;
+  min-width: 120rpx;
+  min-height: 120rpx;
+  float:left; 
+  clear: both;
+}
+
+.info-view{
+  padding-left:30rpx;
+  font-size: 24rpx;
+  color:#999;
+  max-width: 500rpx;
+  /* float: left */
+}
+
+.title-l{
+  font-size:28rpx;
+  /* line-height: 1; */
+  max-height: 82rpx;
+  color:#080808;
+  margin-bottom: 12rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.price{
+  flex: 1;
+  font-size: 28rpx;
+}
+
+
+.item-footer{
+  font-size: 24rpx;
+  color:#999;
+  padding: 10rpx 0;
+}
+ .item-footer text{
+  padding-right: 20rpx
+}
+.item-footer-view{
+  text-align: right;
+}
+
+.bind-right{
+  /* width: 30%; */
+  float: right
+}
+
+.reserve {
+  /* width: 25%; */
+  padding: 10rpx 30rpx;
+  border-radius: 15rpx;
+  background: #fe3c3c;
+  color: #fff;
+  margin-right: 76rpx;
+  margin-top: 16rpx;
+  font-size: 28rpx
+}
+.rmb{
+  color:#fb5957;
+}
+.number{
+   color:#fb5957;
+   font-size: 36rpx;
+   font-weight:bold;
+   padding-right: 6rpx
+}
+
+.roomtype{
+  display: none;
+}
+
+
+/*酒店设施  */
+.bg-facilities{
+   background: #f5f5f5;
+  width: 100%;
+  padding: 10rpx 0;
+}
+.facilities{
+  font-size: 30rpx;
+  color: #666;
+  padding: 0rpx 29rpx ;
+}
+ .facilities-con{
+  /* font-size: 24rpx!important; */
+  /* font-family: 'Microsoft YaHei', 微软雅黑, 'Arial, sans-serif, SimSun'; */
+  padding: 6rpx 10rpx;
+  /* color: #8e8e8e!important; */
+  /* line-height:170%; */
+
+} 
+.biaoqian_danlan.wxParse-span.wxParse-inline,
+.biaoqian_danlv.wxParse-span.wxParse-inline{
+   color: rgb(51, 127, 229)!important;
+   font-size: 28rpx!important;
+   font-family: 'Microsoft YaHei', 微软雅黑, 'Arial, sans-serif, SimSun';
+}
+
+.wxParse-p{
+  font-family: 'Microsoft YaHei', 微软雅黑, 'Arial, sans-serif, SimSun';
+}
+.WxEmojiView.wxParse-inline{
+  font-family: 'Microsoft YaHei', 微软雅黑, 'Arial, sans-serif, SimSun';
+  font-size: 24rpx!important;
+}
+.wxParse-li{
+  font-size: 24rpx!important;
+}
+
+.list-paddingleft-2{
+  padding: 6rpx 10rpx!important;
+}

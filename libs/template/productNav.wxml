@@ -1,0 +1,39 @@
+<template name="proNav">
+
+    <view class = "carousel-main-container" style="height:100%;background:url({{background}})  no-repeat 0 0;background-size: 130%;">
+      <view class="c-inner-title">
+          <view class = "c-inner-title-t">{{title.name}}</view>
+          <view class="c-inner-title-c">{{title.englishName}}</view>
+          <view class="c-inner-title-line"></view>
+      </view>
+      <view class="c-inner-describe">
+          <view class="c-inner-describe-p">
+            {{describe.content}}
+          </view>
+      </view>
+      <view class="c-inner-iconNav">
+          <view class="c-box-list">
+
+            <block wx:for="{{nav}}">
+
+              <view class="c-inner-nav-box">
+                  <navigator url="{{item.url}}" hover-class="navigator-hover">
+                    <view class="icon-img" style="">
+                      <image class="logImge" src = "../../../../image/productSys/{{item.logo}}.png"></image>
+                    </view>
+                    <view class="nav-box-words">
+                      {{item.name}}
+                    </view>
+                  </navigator>
+              </view>
+            </block>
+        
+          </view>
+      </view>
+      <view class="c-inner-more">
+          <view class="data-more c-inner-more-words" bindtap="getMoreDetails" data-more = "{{pid}}">more</view>
+          <view class = "c-inner-more-dots"></view>
+      </view>
+    </view>
+
+</template>

@@ -1,0 +1,6 @@
+<!--pages/w-circuit/w-circuit.wxml-->
+<view class="search-box">
+  <image class='icon-search' src='../../image/home/search.png'></image>
+  <input class="search-input" placeholder="请输入要搜索的内容" value="{{name}}" placeholder-class="placeholder-style" bindinput="searchName" />
+  <button class="search" bindtap='searchList'>搜索</button>
+</view> 

@@ -1,0 +1,36 @@
+.container{
+  padding:45rpx 25rpx; 
+}
+
+.title{
+  font-family: "Helvetica Neue",Helvetica,sans-serif;
+  width:100%;
+  text-align:center;
+  color: #333;
+  font-weight: bold;
+  font-size:32rpx;
+}
+
+.relaceDate{
+  font-size:24rpx;
+  margin:15rpx 0rpx;
+  padding-bottom: 10rpx;
+  text-align: right;
+  border-bottom: 1rpx solid #ddd;
+  width: 100%;
+}
+
+.wxParse-strong{
+  padding-top:25rpx;
+  padding-bottom:15rpx;
+}
+
+.wxParse-p{
+  text-indent: 2em;
+}
+
+image{
+  float:left;
+  padding-top:20rpx;
+  padding-bottom:20rpx;
+}

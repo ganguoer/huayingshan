@@ -1,0 +1,122 @@
+<!--pages/w-hotel-details/w-hotel-details.wxml-->
+<import src="../../wxParse/wxParse.wxml"/> 
+ <!-- <view style="width:375rpx;"> -->
+<view class='d-top'>
+  <image class='hotel-details' src='https://shilin.citgroup.cn{{info1.litpic}}'></image>
+  <image class='opacity' src='https://mjw.citgroup.cn/mapImages/image/w-mall/opacity.png'></image>
+  <view class='title'>
+    <text class="hotelName">{{info1.title}}</text>
+    <text class='type'>{{info4.hotelrank}}  {{info1.decoratetime}}开业</text>
+  </view>
+</view>
+<!--点评和地图  -->
+<view class="board">
+  <!-- <view class="board-item">
+    <view class="word">
+      <text class='score'>4.5分</text>
+      <text class='comment'>{{info1.recommendnum}}条点评</text>
+    </view>
+    <navigator class='comment-n' url='#' hover-class="none">点评
+      <image src="../../image/w-mall/arrow-right.png" />
+    </navigator>
+
+  </view> -->
+  <view class="board-item">
+   <image class='add' src='../../image/w-mall/address.png'></image>
+    <text class='address'>{{info1.address}}</text>
+    <!-- <navigator class='map' url="/page/navigate/navigate" hover-class="none">
+      <image src="../../image/w-mall/arrow-right.png" />
+    </navigator> -->
+
+  </view>
+</view>
+
+<view class='bg'></view>
+
+<!--入住酒店  -->
+<view class='content'>
+  <view class='data'>
+       房间类型
+  </view>
+  <!--入住酒店列表  -->
+  <block wx:for="{{list}}">
+  <view class="up-list">
+    <view class="up-list-item">
+      <view class="item-desc-container" bindtap="kindToggle">
+        <image class="item-img" src="https://shilin.citgroup.cn{{item.piclist}}"></image>
+        <view class="info-view">
+          <text class="title-l">{{item.roomname}}</text>
+          <view class="item-footer">
+            <text>{{item.roomstyle}}</text>
+            <text>{{item.breakfirst}}</text>
+          </view>
+        </view>
+      </view>
+      <view class='bind-right'>
+        <view class="price">
+          <text class='rmb'>￥</text>
+          <text class='number'>{{item.price}}</text>
+        </view>
+        <view class="reser">
+          <navigator class='reserve' url="/pages/hotel-reserve/hotel-reserve?title={{info1.title}}&roomname={{item.roomname}}&price={{item.price}}&hotelid={{info1.aid}}&suitid={{item.id}}" hover-class="none">预定</navigator>
+        </view>
+      </view>
+      <!--下拉内容  -->
+      <!-- <view class="kind-list-item-bd {{item.open ? 'kind-list-item-bd-show' : ''}}">
+        <view class="roomtype"  >
+             房型说明：不可加床该房型可安排无烟楼层；该房型有无烟房；该房可无烟处理便利设施：雨伞、110V电压插座、空调、书桌、房内保险箱媒体/科技：国内长途电话、电脑食品和饮品：电热水壶、咖啡壶/茶壶、免费瓶装水、小冰箱浴室：24小时热水、拖鞋、浴室化妆放大镜、浴衣、独立淋浴间、吹风机、免费洗漱用品(6样以上)室外/景观：城景、地标景服务及其他：唤醒服务、语音留言、免费报纸
+        </view>
+      </view> -->
+    </view>
+  </view>
+  </block> 
+</view>
+
+<!-- 酒店设施 -->
+<view class='bg-facilities'>
+  <text class='facilities'>酒店介绍</text>
+</view>
+
+<!--酒店设施内容  -->
+<view class='facilities-con'>
+ 
+     <template class="content" is="wxParse" data="{{wxParseData:content.nodes}}"/>
+ 
+</view>
+<!-- 酒店设施 -->
+<view class='bg-facilities'>
+  <text class='facilities'>酒店服务</text>
+</view>
+
+<!--酒店设施内容  -->
+<view class='facilities-con'>
+ 
+     <template class="content" is="wxParse" data="{{wxParseData:spot.nodes}}"/>
+ 
+</view>
+
+<!-- 酒店设施 -->
+<view class='bg-facilities'>
+  <text class='facilities'>酒店交通</text>
+</view>
+
+<!--酒店设施内容  -->
+<view class='facilities-con'>
+ 
+     <template class="content" is="wxParse" data="{{wxParseData:traffic.nodes}}"/>
+ 
+</view>
+
+<!-- 酒店设施 -->
+<view class='bg-facilities'>
+  <text class='facilities'>酒店提示</text>
+</view>
+
+<!--酒店设施内容  -->
+<view class='facilities-con'>
+ 
+     <template class="content" is="wxParse" data="{{wxParseData:notice.nodes}}"/>
+ 
+</view>
+
+<!-- </view>  -->

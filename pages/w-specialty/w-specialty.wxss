@@ -1,0 +1,2 @@
+/* pages/w-specialty/w-specialty.wxss */
+@import "../w-hotel/w-hotel.wxss";

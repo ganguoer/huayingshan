@@ -1,0 +1,150 @@
+.d-list-item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.dynamic-msg {
+  position: relative;
+  padding-left: 24rpx;
+  padding-right: 24rpx;
+  padding-top: 30rpx;
+}
+
+.dynamic-msg-header{
+  font-size: 30rpx;
+  line-height: 45rpx;
+  color: #333;
+}
+
+.dynamic-msg-date{
+  font-size: 24rpx;
+  line-height: 36rpx;
+  color: #555;
+}
+
+.container{
+  padding: 20rpx;
+  padding-bottom: 200rpx;
+}
+.dynamic-msg-content {
+  overflow: hidden;
+  position: relative;
+  padding-top:15rpx;
+}
+
+.content-img {
+  width: 30%;
+  overflow: hidden;
+  float: left;
+}
+
+.img{
+  height: 200rpx;
+}
+
+
+.content-describe {
+  box-sizing: border-box;
+  width: 70%;
+  float: left;
+  padding: 0;
+  margin: 0;
+  text-indent: 2em;
+  /*设置超出隐藏start*/
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  /*end*/
+  line-height: 42rpx;
+  font-size: 26rpx;
+  padding-left:15rpx;
+  padding-right:15rpx;
+}
+
+
+.dynamic-msg-cut {
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #ddd;
+}
+
+/*tab页切换*/
+.tab-news-type{
+  font-family: "Helvetica Neue",Helvetica,sans-serif;
+  display: block;
+  width:100%;
+  overflow: hidden;
+  height:64rpx;
+  color:#666;
+  font-weight: bold;
+  font-size:32rpx;
+  position: relative;
+  background: #fff;
+}
+
+.news{
+  float:left;
+  width:33%;
+  text-align: center;
+  line-height: 64rpx;
+  color:#222;
+}
+
+.research{
+  float:left;
+  width:34%;
+  text-align: center;
+  line-height: 64rpx;
+}
+
+.cuxiao{
+  float:left;
+  width:33%;
+  text-align: center;
+  line-height: 64rpx;
+}
+
+.line{
+  position: absolute;
+  height:4rpx;
+  width:33%;
+  bottom:0;
+  left:0;
+  background:#666;
+  overflow: visible;
+  transition: all 0.2s ease;
+}
+.knownMore{
+  display:block;
+  position: absolute;
+  font-size: 24rpx;
+  color:red;
+  right:0;
+  bottom:0;
+}
+.triangle{
+  position:absolute;
+  height:0;
+  width:0;
+  border:12rpx solid transparent;
+  border-bottom:12rpx solid #ccc;
+  top:-20rpx;
+  left:50%;
+  margin-left:-6rpx;
+}
+
+/*下拉*/
+.getMore{
+  height:45rpx;
+  line-height:45rpx;
+  text-align: center;
+  color: #666;
+  font-size:30rpx;
+  padding-top:30rpx;
+  padding-bottom:45rpx;
+}

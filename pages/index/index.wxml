@@ -1,0 +1,85 @@
+<view class="slide">
+  <swiper indicator-dots="true" autoplay="true" interval="4000" duration="1000" circular="true">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150" mode="aspectFill" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- <view class="information">
+  <image src="../../image/home/horn.png"></image>
+  <view>最新资讯：2017年全国高考学子免费游石林！</view>
+  <view style="padding-left:80px;">"阿诗玛带你游石林"新浪微博一直播活动......</view>
+</view> -->
+
+<view class="section">
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item ">
+      <navigator url="/pages/index-dynamic/index-dynamic?id=1" hover-class="navigator-hover">
+        <view class="w-nav">
+          <image class="hotel" src="../../image/w-mall/eat.png" />
+        </view>
+        <text>吃</text>
+      </navigator>
+    </view>
+    <view class="flex-item ">
+      <navigator url="/pages/index-dynamic/index-dynamic?id=2" hover-class="navigator-hover">
+        <view class="w-nav">
+          <image class="hotel" src="../../image/w-mall/zhu.png" />
+        </view>
+        <text>住</text>
+      </navigator>
+
+    </view>
+    <view class="flex-item">
+      <navigator url="/pages/index-dynamic/index-dynamic?id=3" hover-class="navigator-hover">
+        <view class="w-nav">
+          <image class="hotel" src="../../image/w-mall/walk.png"/>
+        </view>
+         <text>行</text>
+      </navigator>
+    </view>
+        <view class="flex-item">
+      <navigator url="/pages/index-dynamic/index-dynamic?id=3" hover-class="navigator-hover">
+        <view class="w-nav">
+          <image class="hotel" src="../../image/w-mall/travel.png"  />
+        </view>
+         <text>游</text>
+      </navigator>
+    </view>
+        <view class="flex-item">
+      <navigator url="/pages/index-dynamic/index-dynamic?id=3" hover-class="navigator-hover">
+        <view class="w-nav">
+          <image class="hotel" src="../../image/w-mall/gou.png"  />
+        </view>
+         <text>购</text>
+      </navigator>
+    </view>
+        <view class="flex-item">
+      <navigator url="/pages/index-dynamic/index-dynamic?id=3" hover-class="navigator-hover">
+        <view class="w-nav">
+          <image class="hotel" src="../../image/w-mall/yu.png"  />
+        </view>
+         <text>娱</text>
+      </navigator>
+    </view>
+  </view>
+ 
+</view>
+
+<!-- <view class="line"></view> -->
+
+<view class="foot">
+  <image src="../../../image/w-mall/huaying.jpg"></image>
+  <view class="introduce">
+     <!-- 石林是1982年国务院批准的首批国家级重点风景名胜区之一。是世界上最典型的卡斯特地貌景观，范围达350平方公里，素有“造型地貌天然博物馆之称”... -->
+     华蓥山旅游区位于四川盆地东北部中国优秀旅游城市-广安市境内，境内高速公路(成南广、渝邻广、巴广渝)、襄渝铁路全线贯通，距重庆1小时，成都3小时车程，交通十分便捷。景区以...
+    <!-- {{list.scProfile}} -->
+    <navigator class='details' url='/pages/spot-survey/spot-survey?{{list.pkScenic}}'>
+      <text > >>了解详情</text>
+    </navigator>
+  </view>
+
+</view>

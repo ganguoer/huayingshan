@@ -1,0 +1,9 @@
+<!--pages/w-guide/w-guide.wxml-->
+
+
+<!-- <web-view src="https://datav.aliyun.com/share/35173d78320dfc580f9ca8209ac9829c"></web-view> -->
+
+<view class="search-box">
+ <!-- <web-view src="https://mp.weixin.qq.com/"></web-view> -->
+  <!-- <web-view src="https://shilin.citgroup.cn/datav.html"></web-view> -->
+ </view>

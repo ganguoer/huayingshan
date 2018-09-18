@@ -1,0 +1,146 @@
+/* pages/information/information.wxss */
+view,text{
+  letter-spacing: 2rpx;
+}
+page{
+  background:#F9F9F9;
+}
+.swiper-tab {
+  width: 100%;
+  /* border-bottom: 2rpx solid #777777;  */
+   text-align: center; 
+  line-height: 80rpx;
+  border-bottom:3rpx solid #E4E4E4;
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  width: 25%;
+  color: #777;
+}
+
+.on {
+  color: red;
+  border-bottom: 3rpx solid red;
+  /* font-weight: bold; */
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.up-list{
+  margin:30rpx;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+   border: 2rpx #eaeaea solid;
+   border-radius:10rpx;
+}
+
+.up-list-item{
+  padding: 30rpx;
+  display:flex;
+}
+
+.item-desc-container{
+  padding-bottom: 20rpx;
+  flex:1;
+}
+
+.info-view{
+  font-size: 24rpx;
+  color:#999;
+  max-width: 500rpx;
+  float: left
+}
+
+.title-l{
+  font-size:30rpx;
+  /* line-height: 1; */
+  max-height: 82rpx;
+  color:#080808;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  /* white-space:nowrap; */
+}
+.price{
+  font-size: 28rpx;
+  padding-right:10rpx;
+
+}
+
+
+.item-footer{
+  font-size: 24rpx;
+  color:#999;
+  /* padding: 10rpx 0; */
+}
+
+ .item-footer text:nth-child(2){
+  padding-right: 10rpx
+}
+.item-footer-view{
+  text-align: right;
+}
+
+.bind-right{
+  text-align: right;
+  padding-left:10rpx;
+
+}
+
+.reser {
+   padding: 15rpx 30rpx;
+  border-radius: 15rpx;
+  background: #F9F9F9;
+  margin-top: 16rpx;
+  font-size: 28rpx;
+  border:2rpx solid #E4E4E4; 
+}
+.rmb{
+  color:#fb5957;
+}
+.number{
+   color:#fb5957;
+   font-size: 36rpx;
+   font-weight:bold;
+}
+
+.roomtype{
+  display: none;
+}
+
+.describtion{
+  color:#F6BE07;
+  font-size:28rpx;
+  padding:35rpx 0 20rpx;
+}
+
+
+.waiting{
+  padding-left:18rpx;
+  padding-right:18rpx;
+  font-size: 24rpx;
+  color: #F6BE07; 
+  border: 1rpx solid #F6BE07;
+  border-radius: 20rpx;
+  line-height: 1.6;
+}
+button::after {
+  border: none;
+ 
+}
+button{
+
+  background: #fff;
+}

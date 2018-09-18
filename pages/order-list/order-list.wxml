@@ -1,0 +1,141 @@
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">全部</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">待付款</view>
+  <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">已付款</view>
+  <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">已退款</view>
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight?winHeight+'px':'auto'}}" bindchange="bindChange">
+  <swiper-item>
+    <scroll-view scroll-y="{{true}}" style="height: {{winHeight?winHeight+'px':'auto'}}" id="ManBody" bindtouchend="pullListEnd">
+      <block wx:for="{{listd}}">
+        <view class="up-list">
+          <view class="up-list-item">
+            <view class="item-desc-container" bindtap="kindToggle">
+              <view class="info-view">
+                <text class="title-l">{{item.productname}}</text>
+                <view class="item-footer" style='padding-top:20rpx;'>
+                  <text>使用时间：</text>
+                  <text>{{item.usedate}}</text>
+                </view>
+
+              </view>
+            </view>
+            <view class='bind-right'>
+              <view class="price">
+                <text class='rmb'>￥</text>
+                <text class='number'>{{item.price}}</text>
+              </view>
+
+              <view class='describtion' wx:if="{{item.ispay==1}}">
+               <button class='waiting' >已付款</button>
+              </view>
+              <view class='describtion' wx:elif="{{item.ispay==0}}">
+               <button class='waiting' bindtap="waitPay">待付款</button>
+              </view>
+              <view class='describtion' wx:else>已退款</view>
+
+
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </swiper-item>
+
+  <swiper-item>
+    <scroll-view scroll-y="{{true}}" style="height: {{winHeight?winHeight+'px':'auto'}}">
+      <block wx:for="{{listd}}">
+        <view class="up-list" wx:if="{{item.ispay==0}}">
+          <view class="up-list-item">
+            <view class="item-desc-container" bindtap="kindToggle">
+              <view class="info-view">
+                <text class="title-l">{{item.productname}}</text>
+                <view class="item-footer" style='padding-top:20rpx;'>
+                  <text>使用时间：</text>
+                  <text>{{item.usedate}}</text>
+                </view>
+
+              </view>
+            </view>
+            <view class='bind-right'>
+              <view class="price">
+                <text class='rmb'>￥</text>
+                <text class='number'>{{item.price}}</text>
+              </view>
+
+              <view class='describtion'>
+                   <button class='waiting' bindtap="waitPay">待付款</button>
+                </view>
+
+
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </swiper-item>
+
+  <swiper-item>
+    <scroll-view scroll-y="{{true}}" style="height: {{winHeight?winHeight+'px':'auto'}}">
+      <block wx:for="{{listd}}">
+        <view class="up-list"  wx:if="{{item.ispay==1}}">
+          <view class="up-list-item">
+            <view class="item-desc-container" bindtap="kindToggle">
+              <view class="info-view">
+                <text class="title-l">{{item.productname}}</text>
+                <view class="item-footer" style='padding-top:20rpx;'>
+                  <text>使用时间：</text>
+                  <text>{{item.usedate}}</text>
+                </view>
+
+              </view>
+            </view>
+            <view class='bind-right'>
+              <view class="price">
+                <text class='rmb'>￥</text>
+                <text class='number'>{{item.price}}</text>
+              </view>
+              <view class='describtion'> 
+                 <button class='waiting' >已付款</button>
+               </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </swiper-item>
+
+
+  <swiper-item>
+    <scroll-view scroll-y="{{true}}" style="height: {{winHeight?winHeight+'px':'auto'}}">
+      <block wx:for="{{listd}}">
+        <view class="up-list"  wx:if="{{item.ispay==2}}">
+          <view class="up-list-item">
+            <view class="item-desc-container" bindtap="kindToggle">
+              <view class="info-view">
+                <text class="title-l">{{item.productname}}</text>
+                <view class="item-footer" style='padding-top:20rpx;'>
+                  <text>使用时间：</text>
+                  <text>{{item.usedate}}</text>
+                </view>
+
+              </view>
+            </view>
+            <view class='bind-right'>
+              <view class="price">
+                <text class='rmb'>￥</text>
+                <text class='number'>{{item.price}}</text>
+              </view>
+              <view class='describtion' >
+                    <button class='waiting' >已退款</button>
+              </view>
+
+
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </swiper-item>
+
+</swiper>

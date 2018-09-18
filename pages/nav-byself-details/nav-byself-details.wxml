@@ -1,0 +1,106 @@
+<view class = "nav-container" style = "width:100%;height:100%">
+  <view class='map-container' style='height:{{mapHeight}}px'>
+  <!-- <view class='mapCenterFlag' style='left:{{cLeft}}px;top:{{cTop}}px'></view> -->
+    <!--地图区域  -->
+    <view id = "imageControl"  class='imageControl' bindtouchstart='shiftStart' bindtouchend ='shiftTo' style='width:{{imageWidth}}px;height:{{imageHeight}}px;left:{{mapLeft}}px;top:{{mapTop}}px;transition:{{isAnimial ? "all 0.3s ease" : "none"}}'>
+      <image src='{{mapUrl}}' mode='widthFix' 
+     style="width:{{imageWidth}}px;height:{{imageHeight}}px" bindload = "initImage">
+     </image> 
+        <block wx:if = "{{isType==1 || isType==0}}">
+        <canvas canvas-id='router' style='width:{{imageWidth}}px;height:{{imageHeight}}px'>
+              </canvas>
+               <image class='coverImg' bindload='loadingRouter' src='https://mjw.citgroup.cn{{routerImg}}' style='width:{{imageWidth}}px;height:{{imageHeight}}px;transition:{{isAnimial ? "all 0.3s ease" : "none"}}'></image> 
+          </block>
+          <block wx:if = "{{isType==2 ? true : false}}"  wx:for="{{jdData}}">
+              <view class='doteFlag' bindtap='clickMapJd' data-spot = "{{item.pkSpotBase}}" style='display:block;left:{{item.vpointHorizontal}}px;top:{{item.vpointVertical}}px;'>
+                <view class = "jdName">{{item.spotName}}</view>
+                <image src='../../image/location2.png' style='width:50rpx;height:50rpx;'></image>
+                <block wx:if = "{{item.pkSpotBase == spot}}">
+                
+                </block>
+              </view>
+          </block>
+           <block wx:if = "{{isType==3 ? true : false}}"  wx:for="{{cesuoData}}">
+              <view class='doteFlag' style='display:block;left:{{item.vpointHorizontal}}px;top:{{item.vpointVertical}}px;'>
+          <image src='../../image/location3.png' style='width:50rpx;height:50rpx;'></image>
+              </view>
+          </block>
+
+           <block wx:if = "{{isType==4 ? true : false}}"  wx:for="{{jdData}}">
+              <view class='doteFlag' style='display:block;left:{{item.vpointHorizontal}}px;top:{{item.vpointVertical}}px;'></view>
+          <image src='../../image/location4.png' style='width:50rpx;height:50rpx;'></image>
+          </block>
+
+           <block wx:if = "{{isType==5 ? true : false}}"  wx:for="{{jdData}}">
+              <view class='doteFlag' style='display:block;left:{{item.vpointHorizontal}}px;top:{{item.vpointVertical}}px;'>
+          <image src='../../image/location5.png' style='width:50rpx;height:50rpx;'></image>
+              </view>
+          </block>
+
+           <block wx:if = "{{isShowPos ? true : false}}">
+          <view class='doteFlag animal' style='display:block;left:{{peopleX}}px;top:{{peopleY}}px;'>
+          <image src='../../image/location0.png' style='width:50rpx;height:50rpx;'></image>
+          </view>
+          </block>
+     </view>
+  
+     <!--控制区-->
+     <view class='handleMap'>
+        <view class='conIcon split'bindtap='bigImg'>
+           <image class='scallIcon' src='../../image/big.png'></image>
+        </view>
+        <view class='conIcon split' bindtap='smallImg'>
+           <image class='scallIcon' src='../../image/small.png'></image>
+        </view>
+
+        <view class='conIcon split' bindtap='initScall'>
+           <image class='scallIcon' src='../../image/init.png'></image>
+        </view>
+     </view>
+  </view>
+
+   <view class = "footer-nav" style='bottom:{{botOffsetY}};'>
+    <view class='flex-layout'>
+          <view class='nav-item {{isType==1 ? "nav-item-active" : ""}} line-list'  bindtap ="recomandLines" id = "recomandLines">线路推荐
+        
+            <!-- <view class='arrow' wx:if = "{{isType == 1}}"></view> -->
+          </view>
+        <view class='nav-item {{isType==2 ? "nav-item-active" : ""}}' id ="jd" bindtap='clickJd'>景点
+          </view>
+        <view class='nav-item {{isType==3 ? "nav-item-active" : ""}}' id = "cesuo" bindtap='clickCesuo'>厕所          </view>
+        <view class='nav-item {{isType==4 ? "nav-item-active" : ""}}' id = "bus" bindtap='MyPosition'>我的位置       </view>
+     </view>
+        <view class='lines'style='{{isType == 1 ? "padding-bottom:"+paddingBottom+"px;" : ""}}height:{{linesListHeight}}px'>
+          <view class='recommandL'></view>
+          <block  wx:for="{{lineList}}">
+            <view class='line {{item.pkRoute == selRoute ? "routerActive" : ""}}' data-id = "{{item.pkRoute}}" bindtap='getRouter'>{{item.routeDescribe}}</view>
+          </block>
+        </view>
+      <!-- <view class='nav-item {{isType==5 ? "nav-item-active" : ""}}' id = "supermarket" bindtap='clickSuperMarket'>超市</view>
+      <view class='nav-item {{isType==6 ? "nav-item-active" : ""}}' id = "zhusu" bindtap='clickZhusu'>住宿</view> -->
+    </view> 
+</view>
+       <!-- <block wx:if = "{{isShowModel == true}}"> -->
+         <!--show model of jd describe-->
+                   <view class='jdDescribe' style='display:block; {{isShowModel ? "top:30%;opacity:1":"top:-150%;opacity:0"}}'>
+                    <view class='jdHead'>
+                      <view class='jdTitle'>{{pt.spotName}}</view>
+                      <view class='jdClose' catchtap='closeJdModel'>X</view>
+                    </view>
+                    <view class='jdContent'>
+                      <view class='contentImg' style='background:url(https://mjw.citgroup.cn/{{pt.spotLogo}})no-repeat 0 0;background-size:cover'>
+                        
+                      </view>
+                      <view class='contentMain'>
+                        <view class='mainTitle'>
+                         {{pt.spotProfile}}
+                        </view>
+                        <view class='mainDescribe'>
+                            <view bindtap='clickVoice' class='describe voice {{isPaly ? "play":"stop"}}' data-jdVoice = "{{pt.spotVoice}}">{{isPaly ? "正在播放":"语音解说"}}</view>
+                        </view>
+                      </view>
+                    </view>
+                    <!-- <view class='downFlag'></view> -->
+                  </view> 
+               <!--end of jd describe-->
+               <!-- </block> -->

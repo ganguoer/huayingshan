@@ -1,0 +1,140 @@
+/* pages/w-ticket-details/w-ticket-details.wxss */
+.d-top image{
+  width: 100%;
+  height: 423rpx
+}
+.address{
+  padding: 0rpx 20rpx 20rpx 20rpx;
+  position: relative;
+  border-bottom: 1rpx solid #eaeaea;
+}
+image.add{
+  width: 24rpx;
+   height: 29rpx; 
+}
+image.theme{
+  width: 25rpx;
+   height: 25rpx; 
+}
+image.ticket{
+  width: 27rpx;
+   height: 18rpx; 
+}
+.address text{
+  font-size: 28rpx;
+  color: #333;
+  padding: 0 50rpx 0 16rpx;
+  vertical-align: middle
+}
+.address image{
+  vertical-align: middle
+}
+.arrow-right{
+  width: 24rpx;
+   height: 29rpx; 
+  position:absolute;
+  right: 30rpx;
+   bottom: 26rpx  
+}
+.bg{
+  width: 100%;
+  height: 20rpx;
+  background: #efefef
+}
+
+/*票价  */
+.top{
+  border-bottom: 1px solid  #eaeaea;
+  padding: 15rpx 32rpx;
+}
+.top .border{
+ padding-left: 20rpx;
+ font-size: 28rpx;
+ border-left: 6rpx solid #41b5e5;
+}
+
+.content{
+   padding: 10rpx 20rpx 20rpx 32rpx;
+   border-bottom:1px solid #eaeaea;
+}
+.content .l{
+  width: 70%;
+  display: inline-block;
+  border-right: 1rpx solid #eaeaea;
+}
+.color{
+  color: #fabe00;
+  font-size: 26rpx;
+  margin: 15rpx 0 20rpx
+}
+.content image{
+  width: 14rpx;
+  height: 14rpx;
+  vertical-align: middle;
+  margin-right:10rpx;
+}
+.l text{
+  vertical-align: middle;
+  margin-right: 20rpx
+}
+.subtitle{
+  color: #666;
+  font-size: 30rpx;
+}
+
+.known{
+  color: #fabe00;
+  font-size: 26rpx
+}
+.content .r{
+  width: 20%;
+  display: inline-block;
+  text-align: center;
+  margin-left: 40rpx;
+  vertical-align:top;
+  padding-top:10rpx;
+
+}
+.rmb{
+  color:#fb5957;
+  font-size: 26rpx
+}
+.number{
+   color:#fb5957;
+   font-size: 36rpx;
+   font-weight:bold;
+}
+
+.pay{
+  color: #fe3c3c;
+  font-size: 24rpx;
+  padding: 10rpx 0;
+}
+.reserve{
+  background: #fe3c3c;
+  color: #fff;
+  padding: 10rpx 0rpx;
+  font-size: 30rpx;
+  border-radius: 16rpx;
+}
+
+.cheap{
+  font-size: 28rpx;
+}
+
+/* .txt{
+  font-size: 26rpx;
+  color: #666;
+  padding: 10rpx 26rpx;
+  line-height: 170%;
+} */
+/* .wxParse-p{
+  text-indent: 2em
+} */
+
+.wxParse-div{
+  padding: 0 14rpx!important;
+}
+.wxParse-inline{
+   font-size: 26rpx!important;
+}

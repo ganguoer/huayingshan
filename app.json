@@ -1,0 +1,75 @@
+{
+  "pages": [
+   
+    "pages/index/index",
+    "pages/w-index/w-index",
+    "pages/w-hotel/w-hotel",
+    "pages/w-hotel-details/w-hotel-details",
+    "pages/w-ticket/w-ticket",
+    "pages/w-ticket-details/w-ticket-details",
+    "pages/spot-survey/spot-survey",
+    "pages/hotel-reserve/hotel-reserve",
+    "pages/my/my",
+    "pages/order-list/order-list",
+    "pages/payment/payment",
+    "pages/nav-byself/nav-byself",
+    "pages/nav-byself-details/nav-byself-details",
+    "pages/ticket-reserve/ticket-reserve",
+    "pages/ticket-payment/ticket-payment",
+    "pages/paySuccess/paySuccess",
+    "pages/dynamic/dynamic",
+    "pages/articleDetails/articleDetails",
+    "pages/index-dynamic/index-dynamic",
+    "pages/w-guide/w-guide",
+    "pages/w-circuit/w-circuit",
+    "pages/w-specialty/w-specialty",
+    "pages/swiper/swiper"
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#333333",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#fff",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#06b1f8",
+    "borderStyle": "black",
+    "backgroundColor": "#3c3c3c",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/footer/home-active.png",
+        "selectedIconPath": "image/footer/home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/dynamic/dynamic",
+        "iconPath": "image/footer/zixun.png",
+        "selectedIconPath": "image/footer/zixun.png",
+        "text": "资讯"
+      },
+      {
+        "pagePath": "pages/w-index/w-index",
+        "iconPath": "image/footer/mall.png",
+        "selectedIconPath": "image/footer/mall.png",
+        "text": "微商城"
+      },
+      {
+        "pagePath": "pages/nav-byself/nav-byself",
+        "iconPath": "image/footer/guid.png",
+        "selectedIconPath": "image/footer/guid.png",
+        "text": "自导"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "image/footer/we.png",
+        "selectedIconPath": "image/footer/we.png",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

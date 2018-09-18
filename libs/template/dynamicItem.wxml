@@ -1,0 +1,17 @@
+<template name="dynamicItem">
+  <view class="d-list-item" data-articleid = '{{item.pkNews}}' bindtap = "goArticle">
+      <view class = "dynamic-msg">
+          <view class="dynamic-msg-header">{{item.newsName}}</view>
+          <view class="dynamic-msg-date">{{item.infoModifiedtime}}</view>
+          <view class="dynamic-msg-content" >
+              <view style="" class="content-img" style='background:url(https://mjw.citgroup.cn/{{item.newsThumbnail}})no-repeat 0 0;background-size:cover'>
+                 <image class="img"src=""></image>
+              </view>
+              <view class="content-describe">{{item.newsFingerpint}}</view>
+              <view class='knownMore'>[更多内容]</view>
+          </view>
+          <view class="dynamic-msg-cut"></view>
+      </view>
+  </view>
+</template>
+<!--pages/nav-byself-details/nav-byself-details-->

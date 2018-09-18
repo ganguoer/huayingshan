@@ -1,0 +1,51 @@
+<view id = "ManBody" bindtouchend="pullListEnd">
+<view class="slide">
+      <swiper indicator-dots="true"
+        autoplay="true" interval="4000" duration="1000" circular="true">
+          <block wx:for="{{imgUrls}}">
+            <swiper-item>
+              <image src="{{item}}" class="slide-image" width="355" height="150" mode="aspectFill"/>
+            </swiper-item>
+          </block>
+      </swiper>
+</view>
+<view class="search-box">
+  <view class="search-btn">
+    <icon type="search" size='16' bindtap="confirm"/>
+  </view>
+  <input class="search-input" placeholder="请输入景区或目的地" placeholder-class="placeholder-style" bindchange="bindChange"/>
+</view>
+
+<!--列表部分  -->
+
+<view class="metainfo-area">
+    <view class="up-list">
+      <block wx:for = "{{jqList}}">
+        <view class="up-list-item">
+          <navigator url="../nav-byself-details/nav-byself-details?jqId={{item.pkScenic}}">
+             <view class="item-desc-container">
+                <image class="item-img" style='background:url(https://mjw.citgroup.cn/{{item.scLogo}}) no-repeat 0 0;background-size:cover' src=""></image>
+                <view class="info-view">
+                  <text class="title">{{item.scName}}</text>
+                  <view class="starNum">
+                  <text class="star">{{item.scDescribe == null ? item.scDescribe : ""}}</text>
+                  </view>
+                  <view class="item-footer">
+                    <view class='item-footer-level'>5A景区</view>
+                    <view class="item-footer-distance">
+                      <!-- 距您2.7km -->
+                    </view>
+                   
+                  </view>
+                </view>
+             </view>
+           </navigator>
+
+        </view>
+      </block>
+    </view>
+   <view class="getMore">{{getMore ?  "下拉获取更多" : "已加载全部"}}</view>
+</view>
+
+
+</view>

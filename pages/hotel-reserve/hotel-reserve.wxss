@@ -1,0 +1,210 @@
+/* pages/hotel-reserve/hotel-reserve.wxss */
+page{
+   background-color:#eee;
+}
+.name{
+  border-bottom:1rpx solid #eee;
+  padding: 20rpx 29rpx;
+  background: #fff;
+  color: #444;
+  font-size:28rpx;
+}
+.part{
+  display: flex;
+  height:26.25px;
+  line-height:26.25px;
+}
+.hotel{
+  flex: 1;
+  font-size: 28rpx;
+   height:26.25px;
+  line-height:26.25px;
+}
+.info{
+ font-size: 28rpx;
+ flex: 4;
+  height:26.25px;
+  line-height:26.25px;
+}
+.roomname{
+  font-size: 28rpx;
+  /* word-wrap:break-word; */
+  flex: 4;
+   height:26.25px;
+  line-height:26.25px;
+}
+
+.clearfix {
+  overflow: auto;
+ _zoom:1;
+}
+.data{
+  width: 100%;
+  padding: 22rpx 0;
+  border-bottom:1rpx solid #eee;
+  background: #fff
+}
+.left{
+  width: 30%;
+   float: left;
+   padding-left: 32rpx;
+}
+.textss{
+  font-size: 28rpx;
+  padding:0 20rpx
+}
+.txt{
+  font-size: 26rpx;
+  color: #ccc;
+}
+.center{
+  float: left ;
+  width: 20%;
+  margin:0 5%;
+  font-size: 26rpx;
+  color: #ccc;
+  border:1rpx solid #ccc;
+  text-align: center;
+  border-radius: 16rpx;
+  margin-top: 31rpx;
+}
+.right{
+  padding-left: 32rpx;
+  float: left;
+  width: 30%;
+}
+
+.num{
+  border-bottom:1rpx solid #eee;
+  padding: 20rpx 30rpx;
+  display: flex;
+  flex: 1;
+  background: #fff
+}
+.room{
+   flex: 1;
+  font-size: 26rpx;
+  padding-top: 12rpx
+}
+
+/*主容器*/
+.stepper { 
+  width: 80px; 
+  height: 26px; 
+  /*给主容器设一个边框*/
+  border: 1px solid #ccc; 
+  border-radius: 3px; 
+  margin:0 auto; 
+} 
+  
+/*加号和减号*/
+.stepper text { 
+  width: 19px; 
+  line-height: 26px; 
+  text-align: center; 
+  float: left; 
+ 
+} 
+  
+/*数值*/
+.stepper input { 
+  width: 40px; 
+  height: 26px; 
+  float: left; 
+  margin: 0 auto; 
+  text-align: center; 
+  font-size: 12px; 
+  /*给中间的input设置左右边框即可*/
+  border-left: 1px solid #ccc; 
+  border-right: 1px solid #ccc; 
+} 
+  
+/*普通样式*/
+.stepper .normal{ 
+  color: black; 
+} 
+  
+/*禁用样式*/
+.stepper .disabled{ 
+  color: #ccc; 
+} 
+
+.bg{
+  width: 100%;
+  height: 40rpx;
+}
+
+.user{
+  display: flex;
+  font-size: 26rpx;
+  padding: 26rpx 30rpx;
+  border-bottom:1rpx solid #eee;
+  background: #fff
+}
+label{
+  padding-top: 9rpx;
+  padding-right: 30rpx;
+}
+
+textarea{
+  width:480rpx;
+  padding-top: 11rpx;
+}
+button[type="warn"]{
+  font-size: 30rpx;
+}
+
+.pay{
+  font-size: 26rpx;
+  padding: 26rpx 30rpx;
+  border-top: 1rpx solid #eee;
+  border-bottom:1rpx solid #eee;
+  background: #fff
+}
+.payl{
+  float: left
+}
+.payr{
+  float: right
+}
+
+.bottom{
+ position: absolute;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background: #fff;
+}
+.botl{
+  float: left;
+  width: 40%;
+  height: 76rpx;
+  line-height: 76rpx;
+  display: flex;
+  padding-left:30rpx;
+   margin:20rpx 0; 
+}
+.word{
+  font-size: 26rpx
+}
+.money{
+  font-size: 30rpx;
+  color: #E64340;
+  flex: 1;
+  padding-top: 11rpx;
+}
+.botr{
+  float: right;
+  width: 50%;
+   margin:20rpx 0; 
+}
+button[type="warn"] {
+margin-right: 30rpx;
+
+}
+form{
+  overflow: hidden;
+  padding:0;
+  margin:0;
+  width:100%;
+}
