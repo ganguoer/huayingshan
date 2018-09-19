@@ -1,0 +1,45 @@
+<!--pages/personal-information/personal-information.wxml-->
+
+<view class='row'></view>
+<view class='order'  >
+  <text class='my-order'>头像</text>
+  <image class='rightphoto' src='../../image/home/headPic.png'></image>
+</view>
+<view class='order'>
+  <text class='my-order'>昵称</text>
+  <navigator class='check-all'>
+    庆庆
+  </navigator>
+</view>
+<view class='order'>
+  <text class='my-order'>手机号</text>
+  <navigator class='check-all'>
+    18310179650
+  </navigator>
+</view>
+<view class='order'>
+  <text class='my-order'>姓名</text>
+  <navigator class='check-all'>
+    庆庆
+  </navigator>
+</view>
+<view class='order'>
+  <text class='my-order'>性别</text>
+  <navigator class='check-all' >
+    女
+  </navigator>
+</view>
+<view class='order'>
+  <text class='my-order'>生日</text>
+  <navigator class='check-all'>
+    19790331
+  </navigator>
+</view>
+<view class='order'>
+  <text class='my-order'>地址</text>
+  <navigator class='check-all'>
+    北京市通州区
+  </navigator>
+</view>
+
+<button bindtap='toa'>退出登录</button>

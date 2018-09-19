@@ -1,0 +1,63 @@
+/* pages/personal-information/personal-information.wxss */
+view,text{
+  letter-spacing: 2rpx;
+}
+
+button{
+  vertical-align: middle;
+  text-align: center;
+  width: 468rpx;
+  height: 80rpx;
+  font-size: 30rpx;
+  border-radius:40rpx; 
+  background: #f73e3e;
+  color: #fff;
+  margin-top: 40rpx
+}
+.row {
+  height: 13rpx;
+  background-color: #f3f3f3;
+  border-top: 1rpx solid #eaeaea;
+  border-bottom: 1rpx solid #eaeaea;
+  padding: 0 30rpx;
+}
+
+.order{
+  display:flex;
+  padding:20rpx 30rpx;
+  border-bottom:2rpx solid #eaeaea;
+}
+.my-order{
+  flex:1;
+  font-size:28rpx;
+}
+.check-all{
+  font-size:26rpx;
+  color:#7A7A7A;
+}
+.rightArrow{
+  width:18rpx;
+  height:32rpx;
+  vertical-align: bottom;
+  padding-left:15rpx;
+}
+.rightphoto{
+  width:45rpx;
+  height:45rpx;
+  vertical-align: bottom;
+  padding-left:15rpx;
+}
+.manage{
+  display:flex;
+  text-align: center;
+  font-size:26rpx;
+  margin:63rpx 0 33rpx;
+}
+.manage navigator{
+  flex:1;
+}
+.manage image{
+  width:42rpx;
+  height:38rpx;
+  margin-bottom:20rpx;
+}

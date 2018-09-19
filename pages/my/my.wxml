@@ -1,7 +1,7 @@
 <!--pages/my/my.wxml-->
 <view class='top'>
  <block wx:if="{{userinfo}}">  
-   <image class='head-logo' src="{{userinfo.avatarUrl}}"></image>
+    <image class='head-logo' src="{{userinfo.avatarUrl}}"></image>
     <view >{{userinfo.nickName}}</view>
  </block>
  <block wx:else>  
@@ -31,7 +31,7 @@
       <view>已退款</view>
   </navigator>
 </view>
-<!-- <view class='row'></view>
+<view class='row'></view>
 <view class='order'>
   <text class='my-order'>个人信息</text>
   <navigator class='check-all' url='/pages/personal-information/personal-information'>
@@ -47,4 +47,4 @@
     查看详情
     <image class='rightArrow' src='../../image/home/rightArrow.png'></image>
   </navigator>
-</view> -->
+</view>

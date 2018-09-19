@@ -1,6 +1,5 @@
 {
   "pages": [
-   
     "pages/index/index",
     "pages/w-index/w-index",
     "pages/w-hotel/w-hotel",
@@ -23,7 +22,10 @@
     "pages/w-guide/w-guide",
     "pages/w-circuit/w-circuit",
     "pages/w-specialty/w-specialty",
-    "pages/swiper/swiper"
+    "pages/swiper/swiper",
+    "pages/personal-information/personal-information",
+    "pages/msgnoticy/msgnoticy",
+    "pages/message/message"
    
   ],
   "window": {

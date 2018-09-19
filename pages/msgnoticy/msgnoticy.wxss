@@ -1,0 +1,13 @@
+/* pages/msgnoticy/msgnoticy.wxss */
+.order{width: 100%;border-bottom: solid 1px #eaeaea;font-size: 28rpx;height: 70rpx;line-height: 70rpx;display:flex}
+.noticy-l{color: #fe3c3c; flex: 1;text-align: center;}
+.noticy-2{flex: 1;text-align: center}
+.active{border-bottom: solid 1px #fe3c3c}
+.times_date{font-size: 20rpx;background: #bebebe;color: #fff;width: 270rpx;height: 42rpx;line-height: 42rpx;margin: 0 auto;margin-top: 15px;text-align: center;border-radius: 4px}
+.comnoticy{flex: 1}
+.content_list{border: solid 1px #eaeaea;border-radius: 6rpx;margin: 0 20rpx;margin-top: 20rpx;padding: 30rpx 20rpx}
+.content_list .jntitle{font-size: 30rpx}
+.imgcontext{margin-top: 15rpx;display: flex}
+.imgsize{width: 110rpx; height: 110rpx;}
+.text_r{font-size: 24rpx;flex: 3;margin-left: 20rpx}
+

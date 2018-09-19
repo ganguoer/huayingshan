@@ -1,0 +1,36 @@
+<!--pages/message/message.wxml-->
+<view class='order'>
+ <view class='comnoticy'></view>
+ <navigator class='comnoticy noticy-l active' url='/pages/message/message'>
+    平台通知
+  </navigator>
+  <view class='comnoticy'></view>
+  <navigator class='comnoticy noticy-2' url='/pages/msgnoticy/msgnoticy'>
+    消息通知
+  </navigator>
+  <view class='comnoticy'></view>
+</view>
+<view class="times_date">2017年09月11日  14：22</view>
+<view class="content_list">
+  <text class="jntitle">纪念华蓥山武装起义70周年！</text>
+  <view class="imgcontext">
+    <image class="imgsize" src='../../image/home/homes.jpg'></image>
+    <text class="text_r">70年前那个不寻常的炽热8月，革命风暴席卷华蓥山区。8月10日、12日        </text>
+  </view>
+</view>
+<view class="times_date">2017年09月11日  14：22</view>
+<view class="content_list">
+  <text class="jntitle">纪念华蓥山武装起义70周年！</text>
+  <view class="imgcontext">
+    <image class="imgsize" src='../../image/home/homes.jpg'></image>
+    <text class="text_r">70年前那个不寻常的炽热8月，革命风暴席卷华蓥山区。8月10日、12日        </text>
+  </view>
+</view>
+<view class="times_date">2017年09月11日  14：22</view>
+<view class="content_list">
+  <text class="jntitle">纪念华蓥山武装起义70周年！</text>
+  <view class="imgcontext">
+    <image class="imgsize" src='../../image/home/homes.jpg'></image>
+    <text class="text_r">70年前那个不寻常的炽热8月，革命风暴席卷华蓥山区。8月10日、12日        </text>
+  </view>
+</view>
