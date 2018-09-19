@@ -1,2 +1,10 @@
 /* pages/w-guide/w-guide.wxss */
 @import "../w-hotel/w-hotel.wxss";
+image.star{
+ width: 27rpx;
+ height: 26rpx;
+ display: inline-block
+}
+.type{
+  padding-left: 14rpx;
+}

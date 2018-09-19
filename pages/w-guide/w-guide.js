@@ -1,4 +1,10 @@
 // pages/w-guide/w-guide.js
+
+var guideData = require('../../data/guide.js')
+
+var request = require("../../libs/proxy.js");
+var PushHandle = require("../../libs/doPull.js"); //simpleCall
+var BaseModel = request.BaseModel;
 Page({
 
   /**
@@ -12,7 +18,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.setData({
+      guideList: guideData.postList[0].content.info1
+    })
   },
 
   /**

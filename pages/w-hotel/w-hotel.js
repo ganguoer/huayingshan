@@ -1,7 +1,7 @@
 // pages/w-hotel/w-hotel.js
 
 // var config=require('../../config.js')
-var postsData = require('../../data/hotel.js')
+var hotelData = require('../../data/hotel.js')
 
 var request = require("../../libs/proxy.js");
 var PushHandle = require("../../libs/doPull.js"); //simpleCall
@@ -21,7 +21,7 @@ Page({
   onLoad: function (options) {
 
     this.setData({
-      posts_key: postsData.postList[0].content.info1
+      hotelList: hotelData.postList[0].content.info1
     })
     // console.log(that.posts_key)
     console.log(postsData.postList[0].content.info1)

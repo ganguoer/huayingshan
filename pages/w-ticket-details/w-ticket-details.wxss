@@ -106,16 +106,16 @@ image.ticket{
 }
 
 .pay{
-  color: #fe3c3c;
+  color: #888;
   font-size: 24rpx;
   padding: 10rpx 0;
 }
 .reserve{
-  background: #fe3c3c;
+  background: #fba207;
   color: #fff;
   padding: 10rpx 0rpx;
   font-size: 30rpx;
-  border-radius: 16rpx;
+  border-radius: 25rpx;
 }
 
 .cheap{
@@ -137,4 +137,20 @@ image.ticket{
 }
 .wxParse-inline{
    font-size: 26rpx!important;
+}
+.txt{
+   padding: 20rpx 30rpx;
+}
+.detail_ticket{
+  font-size: 28rpx;
+  color: #333333;
+}
+.txt text.youhui{
+   font-size: 24rpx;
+  color: #333333;
+  text-indent: 2em;
+}
+image.right{
+   width: 24rpx;
+   height: 29rpx; 
 }

@@ -1,9 +1,49 @@
 <!--pages/w-guide/w-guide.wxml-->
-
-
-<!-- <web-view src="https://datav.aliyun.com/share/35173d78320dfc580f9ca8209ac9829c"></web-view> -->
-
+<view bindtouchend="pullListEnd" id="ListBody">
+<!--搜索部分 -->
 <view class="search-box">
- <!-- <web-view src="https://mp.weixin.qq.com/"></web-view> -->
-  <!-- <web-view src="https://shilin.citgroup.cn/datav.html"></web-view> -->
- </view>
+   <image class='icon-search' src='../../image/home/search.png'></image>
+  <input class="search-input" placeholder="导游" value="{{name}}" placeholder-class="placeholder-style" bindinput="searchName" />
+  <button class="search" disabled="{{disabled}}" bindtap='searchList'>搜索</button>
+</view>
+
+<!--列表部分  -->
+<view class="container" style="padding:0rpx">
+  <!--垂直滚动，这里必须设置高度-->
+  <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" class="list" bindscrolltolower="bindDownLoad" bindscroll="scroll">
+      <block wx:for="{{guideList}}">
+    <view class="up-list">
+      <view class="up-list-item">
+        <navigator url="../w-ticket-details/w-ticket-details?id={{item.aid}}">
+          <view class="item-desc-container">
+            <image class="item-img" src="{{item.litpic}}"></image>
+            <view class="info-view">
+              <text class="title">{{item.title}}</text>
+              <text>销量:{{item.sales}} |  满意度：{{item.satisfyscore}}% </text>
+              <view class="item-footer">
+                <view class="item-footer-author">
+                   <image class='star' src="../../image/w-mall/star.png"></image>
+                    <image class='star' src="../../image/w-mall/star.png"></image>
+                     <image class='star' src="../../image/w-mall/star.png"></image>
+                      <image class='star' src="../../image/w-mall/star.png"></image>
+                       <image class='star' src="../../image/w-mall/star.png"></image>
+                  <text class='type'>{{item.grade}}分</text>
+                </view>
+                <view class="item-footer-view">
+                  <text class='rmb'>￥</text>
+                  <text class='number'>{{item.price}}</text>起
+                </view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+
+      </view>
+    </view>
+  </block>
+    <view class="getMore">{{getMore ?  "下拉获取更多" : "已加载全部"}}</view>
+  </scroll-view>
+ 
+</view>
+
+</view>

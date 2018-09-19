@@ -2,11 +2,11 @@
 <import src="../../wxParse/wxParse.wxml"/> 
  <!-- <view style="width:375rpx;"> -->
 <view class='d-top'>
-  <image class='hotel-details' src='https://shilin.citgroup.cn{{info1.litpic}}'></image>
+  <image class='hotel-details' src='../../image/w-mall/hotel-details.jpg'></image>
   <image class='opacity' src='https://mjw.citgroup.cn/mapImages/image/w-mall/opacity.png'></image>
   <view class='title'>
-    <text class="hotelName">{{info1.title}}</text>
-    <text class='type'>{{info4.hotelrank}}  {{info1.decoratetime}}开业</text>
+    <text class="hotelName">华蓥山大酒店    </text>
+    <text class='type'>高档型  2016年装修</text>
   </view>
 </view>
 <!--点评和地图  -->
@@ -23,7 +23,7 @@
   </view> -->
   <view class="board-item">
    <image class='add' src='../../image/w-mall/address.png'></image>
-    <text class='address'>{{info1.address}}</text>
+    <text class='address'>位于瓦店乡华蓥山旅游区，近地质公园。</text>
     <!-- <navigator class='map' url="/page/navigate/navigate" hover-class="none">
       <image src="../../image/w-mall/arrow-right.png" />
     </navigator> -->
