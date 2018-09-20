@@ -22,11 +22,11 @@ Page({
   onLoad: function (options) {
   
     var self = this;
-    wx.showToast({
-      title: "加载中...",
-      icon: "loading",
-      duration: 10000
-    });
+    // wx.showToast({
+    //   title: "加载中...",
+    //   icon: "loading",
+    //   duration: 10000
+    // });
 
 
     var baseUrl = config.hotelShow + options.id;

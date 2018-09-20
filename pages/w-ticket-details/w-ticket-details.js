@@ -21,11 +21,11 @@ Page({
   onLoad: function (options) {
     console.log(options);
     var that = this;
-    wx.showToast({
-      title: "加载中...",
-      icon: "loading",
-      duration: 10000
-    });
+    // wx.showToast({
+    //   title: "加载中...",
+    //   icon: "loading",
+    //   duration: 10000
+    // });
     // console.log(options);
     var baseUrl = config.spotShow + options.id;
     wx.request({

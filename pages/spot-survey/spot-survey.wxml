@@ -9,27 +9,26 @@
   </swiper>
 </view>
 
-<!-- <image class="eat-item-img" src="http://192.168.2.4:8080/mapImages/image/home/shilin.png"></image> -->
-
 <view class='eat-content'>
   <text>
-   开放时间: 7:00-18:00（取票时间：9:00以后）
+   开放时间：8:00-18:00；根据季节特征、人流量，营业时间有所调整.
   </text>
 </view>
 <view class='eat-content'>
   <text>
-   电话: 0871-67711439;0871-67710699
+   电话：0826-4336610
   </text>
 </view>
 <view class='eat-content'>
   <text>
-   推荐游玩时间： 3-10月
+   推荐游玩时间：4月-10月
   </text>
 </view>
 <view class='eat-content'>
   <text style='line-height:42rpx'>
   景点概況：
- 石林，位于云南省昆明市石林彝族自治县境内，距离省会昆明78公里，“冬无严寒、夏无酷暑、四季如春”，是世界唯一位于亚热带高原地区的喀斯特地貌风景区，素有“天下第一奇观”“石林博物馆”的美誉，是首批中国国家重点风景名胜区、中国国家地质公园、世界地质公园，与北京故宫、西安兵马俑、桂林山水齐名，成为中国四大旅游胜地之一。石林具有世界上最奇特的喀斯特地貌，这里在约3亿年前还是一片泽国，经过漫长的地质演变，终于形成了现今极为珍贵 的地质遗迹。景区是一座名副其实的由岩石组成的“森林”，穿行其间，但见怪石林立，突兀峥嵘，姿态各异。壁峰之间，翠蔓挂石，金竹挺秀，山花香溢，灵禽和鸣，一派生机盎然。
+ 华蓥山大熊猫生态旅游景区，规划面积约11平方千米，将规划建设集旅游观光、避暑度假、休闲游乐、养老养生为一体的生态文化旅游综合体。主要项目有：天然石林、熊猫生态区、黑龙峡漂流、高登山观光区、太阳坪度假区和生态农业养殖区等。致力打造成“春游山、夏避暑、秋观景、冬赏雪”的国内一流、国际知名的山地休闲度假旅游目的地。 [1] 
+尤以岩溶喀斯特石林山峡（国家4A级旅游景区）、神奇峡谷洞中天河（国家4A级旅游景区）、高山岩溶湖泊天池湖（全国三大天池之一）、佛教禅修圣地宝鼎、大熊猫野化放归培训基地为其核心景区。
   </text>
 
 
@@ -37,14 +36,29 @@
 <view class='eat-content'>
   <text  style='line-height:42rpx'>
   交通攻略：
-  在昆明东部汽车客运站乘坐到石林景区的旅游直通车，票价29元/人/次（含保险1元），8:00-18:30每30分钟一班，车程约2小时。
+ 距成都300余千米，重庆100余千米。 [5] 
+自驾车线路：成都——成（南）广高速288千米——广邻高速天池站20千米。
+重庆出发——渝邻高速——广邻高速——天池站下至景区16千米。
+乘车路线建议：南充（马市铺车站）——华蓥（新车站）——华蓥老车站——华蓥山石林景区。
+费用约计：50元
+眺望华蓥
+眺望华蓥
+成都（十陵车站）——华蓥（新车站）——华蓥老车站——华蓥山石林景区。
+费用约计：134元
+重庆（菜园坝车站）——华蓥车站——华蓥山石林景区。
+费用约计：60元
+广元（长途汽车站*火车站）——广安（广安客运枢纽站）——华蓥老车站——华蓥山石林景区。
+费用约计：140元
+邻水新汽车站发往甘坝乡（马家湾）的班车前往华蓥山天意谷景区。
+邻水老汽车站也有直达华蓥山天意谷景区的班车。
+自驾游：从广安城区经广邻高速在邻水出口下，经国道210线约20千米即到，约30分钟。
   </text>
 </view>
 <view class='eat-content' style='display:flex;'>
   <text class='spotAddress' style='font-size:24rpx;'>
-  地址： 云南省昆明市石林彝族自治县
+  地址：广安市华蓥市红岩乡高顶村华蓥山旅游区  
   </text>
-  <!-- <image class='xy' src='../../image/home/map.png' style='padding-top:30rpx;'></image> -->
+  
 </view>
 <!-- <navigator class='address'>
   <text class='spotAddress'>交通攻略：昆明市—环城东路—匝道—昆洛路—广昆高速公路—昆石高速公路—终点。</text>
@@ -93,6 +107,7 @@
   <view class='comment-content'>风景不错，好玩！</view>
 </view> -->
 <view>
-  <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" circles="{{circles}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange"
-show-location style="width: 100%; height: 300px;"></map>
+  <!-- <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" circles="{{circles}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange"
+show-location style="width: 100%; height: 300px;"></map> -->
+<image class='map' src='../../image/hys/map.jpg'></image>
 </view>

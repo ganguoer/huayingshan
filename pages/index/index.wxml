@@ -42,7 +42,7 @@
       </navigator>
     </view>
         <view class="flex-item">
-      <navigator url="/pages/index-dynamic/index-dynamic?id=3" hover-class="navigator-hover">
+      <navigator url="/pages/index-dynamic/index-dynamic?id=4" hover-class="navigator-hover">
         <view class="w-nav">
           <image class="hotel" src="../../image/w-mall/travel.png"  />
         </view>
@@ -50,7 +50,7 @@
       </navigator>
     </view>
         <view class="flex-item">
-      <navigator url="/pages/index-dynamic/index-dynamic?id=3" hover-class="navigator-hover">
+      <navigator url="/pages/index-dynamic/index-dynamic?id=5" hover-class="navigator-hover">
         <view class="w-nav">
           <image class="hotel" src="../../image/w-mall/gou.png"  />
         </view>
@@ -58,7 +58,7 @@
       </navigator>
     </view>
         <view class="flex-item">
-      <navigator url="/pages/index-dynamic/index-dynamic?id=3" hover-class="navigator-hover">
+      <navigator url="/pages/index-dynamic/index-dynamic?id=6" hover-class="navigator-hover">
         <view class="w-nav">
           <image class="hotel" src="../../image/w-mall/yu.png"  />
         </view>

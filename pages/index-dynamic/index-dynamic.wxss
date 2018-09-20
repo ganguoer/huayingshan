@@ -123,7 +123,7 @@
   display:block;
   position: absolute;
   font-size: 24rpx;
-  color:red;
+  color:#ee9906;
   right:0;
   bottom:0;
 }

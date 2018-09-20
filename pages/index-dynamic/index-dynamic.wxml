@@ -1,7 +1,7 @@
 <import src="../../libs/template/dynamicItem.wxml"/>
 <view bindtouchend="pullListEnd" id="ListBody">
   <view class="container">
-    <block  wx:for="{{items}}" wx:key = "*this" wx:for-item = "item">
+    <block  wx:for="{{eatList}}" wx:key = "*this" wx:for-item = "item">
       <template is = "dynamicItem" data = "{{item}}"></template> 
     </block>
   </view>

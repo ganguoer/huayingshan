@@ -1,0 +1,33 @@
+<!--pages/w-hotel-comment/w-hotel-comment.wxml-->
+<view id="content" class="comment">
+        <view class="top">
+          
+                <text>4.4分</text>                                                                                                                                                                                 
+                <text>94%推荐</text>
+                <text>卫生 4.5</text>
+                <text>环境 4.4</text>
+                <text>服务 4.4</text>
+                <text>设施 4.2</text>
+        </view>
+
+        <view class="comments">
+                <view class='commentList'>
+                    <view class="comtop">
+                        <image class='comments' src='../../image/w-mall/comments.png'></image>
+                        <text class="score">4.5</text>
+                        <text class='name'>Jiali0517</text>
+                    </view>
+                    <text class='date'>2017-08入住，2017-08-17发表</text>
+                    <text class='content_d' style='-webkit-box-orient: vertical;'>环境很好，有游泳池，早餐也不错，晚上很安静，就是出行一定要有车 才方便，最好先预约，不然价格优惠少， 性价比不错。环境很好，有游泳池，早餐也不错，晚上很安静，就是出行一定要有车才方便，最好先预约，不然价格优惠少，
+                        性价比不错。环境很好，有游</text>
+                    <view class="content_img">
+                        <image src="../../image/w-mall/hotel.jpg" ></image> 
+                    </view>
+                    <view class='reply'>
+                        <text>酒店回复：感谢您对我们酒店的点评，我们会继续努力为您提供更加便捷幼稚的服务。期待您再次光临入住。</text>
+                    </view>
+                   
+                </view>
+        </view>
+
+    </view>

@@ -1,0 +1,84 @@
+/* pages/w-hotel-comment/w-hotel-comment.wxss */
+.comment{
+    text-align: left!important;
+}
+.comment .top{
+    height: 64rpx;
+    line-height: 64rpx;
+    background-color: #f5f5f5;
+}
+.comment .top{
+    padding-left: 20rpx;
+}
+.comment .top text{
+    padding-right: 10rpx;
+    font-size: 24rpx;
+}
+.comment .top text:first-child{
+    color: #fba207;
+}
+.comment .commentList{
+    padding: 30rpx 24rpx 20rpx;
+    border-bottom: 1rpx solid #e7e7e7;
+}
+.comment .comtop{
+    position: relative;
+}
+image.comments{
+  width: 68rpx;
+  height: 76rpx;  
+}
+.comment .icon-1-24{
+    font-size: 68rpx;
+    color: #0ca2e1;
+}
+.comment .score{
+    font-size: 24rpx;
+    color: #fff;
+    position: absolute;
+    top: 13rpx;
+    left: 15rpx;
+}
+.comment .name{
+    font-size: 22rpx;
+    color: #9b9b9b;
+    position: absolute;
+    top: 13rpx;
+    left: 80rpx;
+}
+.comment .date{
+    font-size: 18rpx;
+    color: #666;
+    margin-bottom: 14rpx;
+}
+.comment .content_d{
+    font-size: 22rpx;
+    color: #444444;
+    line-height: 36rpx;
+    margin-bottom: 14rpx;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.comment .content_img image{
+    width: 139rpx;
+    height: 140rpx;
+    display: inline-block;
+}
+.comment .reply{
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    padding: 15rpx 24rpx;
+    margin-top:14rpx;
+    /* display: none; */
+}
+.comment .reply text{
+    font-size: 22rpx;
+    font-weight: 700;
+    color: #444;
+}
+.comment .reply1{
+    margin-top: 14rpx;
+}

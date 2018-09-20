@@ -29,8 +29,20 @@
   text-indent: 2em;
 }
 
-image{
+/* image{
   float:left;
   padding-top:20rpx;
   padding-bottom:20rpx;
+} */
+
+.parag{
+  font-family: 'microsoft yahei';
+  font-size: 24rpx;
+  color: #666666;
+  text-indent: 2em;
+  line-height: 40rpx;
+}
+image.detailimg{
+  margin:  30rpx auto;
+  display: block;
 }

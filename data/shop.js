@@ -7,13 +7,13 @@ var local_eat = [
       "news": [
         {
           "pkNews": 657,
-          "newsName": "桂兴羊肉",
-          "newsFingerpint": "采用桂兴山区羊肉与猪筒子骨、老母鸡、鲫鱼熬汤，配枸杞、大枣、天麻、生姜、当归等二十多种原料秘烹而成，具有益气补虚、温中暖下、暖胃养肾之功效。",
+          "newsName": "华蓥山山珍",
+          "newsFingerpint": "华蓥山山珍四件套由华蓥山竹笋、竹荪、木耳、珍珠菇四种华蓥山特产包装而成。",
           "newsDescribe": "",
           "newsType": "1",
           "newsRecommend": null,
           "newsTags": null,
-          "newsThumbnail": "../../image/hys/eat.png",
+          "newsThumbnail": "../../image/hys/gou1.jpg",
           "infoModifiedtime": "2017-11-03 16:07:39.0",
           "infoSource": "",
           "infoState": null,
@@ -24,13 +24,13 @@ var local_eat = [
         },
         {
           "pkNews": 658,
-          "newsName": "游击队套餐",
-          "newsFingerpint": "华蓥山游击队套餐以当年游击队的生活餐为主，融入川东餐饮特色，包括手抓玉米粑、野战杂粮、天坑土鸡、老南瓜煨排骨、山椒笋、太婆酿肉等10多个菜品。",
+          "newsName": "华蓥山银杏果",
+          "newsFingerpint": "华蓥山千年银杏果产自华蓥山中1300年树龄的夫妻银杏树，富含维生素C，核黄素、胡萝卜素、钙、磷、铁、钾、镁等微量元素，以及银杏酸、白果酚、五碳多糖、脂固醇等成分。具有益肺气、治咳喘、止带浊、平褶皱、护血管等食疗效果。在宋代，被列为皇家贡品。",
           "newsDescribe": "",
           "newsType": "1",
           "newsRecommend": null,
           "newsTags": null,
-          "newsThumbnail": "../../image/hys/eat2.png",
+          "newsThumbnail": "../../image/hys/gou2.jpg",
           "infoModifiedtime": "2017-11-03 16:08:57.0",
           "infoSource": "",
           "infoState": null,
@@ -41,13 +41,13 @@ var local_eat = [
         },
         {
           "pkNews": 659,
-          "newsName": "雪梨飘香忆先烈",
-          "newsFingerpint": "采用鸡蛋、香菇、红萝卜、核桃仁、白糖等材料做成，味道香甜，造型美观，老少适宜。",
+          "newsName": "华蓥山手工空心面",
+          "newsFingerpint": "华蓥山手工空心面丝条晶莹柔韧，煮后润滑透明，口感细腻，营养丰富，久煮不浑汤，回锅如初。产于广安市邻水县的九龙镇陈家坝，已有百余年历史，以优质面粉为原料，采用独特的民间工艺，手工精制而成。",
           "newsDescribe": "",
           "newsType": "1",
           "newsRecommend": null,
           "newsTags": null,
-          "newsThumbnail": "../../image/hys/eat3.png",
+          "newsThumbnail": "../../image/hys/gou3.jpg",
           "infoModifiedtime": "2017-11-03 16:10:05.0",
           "infoSource": "",
           "infoState": null,
@@ -55,7 +55,7 @@ var local_eat = [
           "infoReserve1": null,
           "infoReserve2": null,
           "infoReserve3": null
-        },
+        }
        
       ],
       "totalNum": 3

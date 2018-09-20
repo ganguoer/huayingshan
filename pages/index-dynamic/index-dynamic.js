@@ -1,51 +1,21 @@
 var request = require("../../libs/proxy.js");
 var PushHandle = require("../../libs/doPull.js"); //simpleCall
 var BaseModel = request.BaseModel;
+
+var eatData = require('../../data/eat.js');
+var zhuData = require('../../data/zhu.js');
+var walkData = require('../../data/walk.js');
+var youData = require('../../data/you.js');
+var shopData = require('../../data/shop.js');
+var yuData = require('../../data/yu.js');
 //var BaseModel = request.simpleCall;
 Page({
   data: {
-    getMore:true,
+    getMore:false,
     newsActive:7,
     items:[]
   },
   model:null,
-  getSelType:function(e){
-    var self = this;
-    this.data.items = [];
-    var tartget = e.currentTarget.dataset;
-    var selType = tartget.selid;
-    var leftX = 0;
-    switch(selType){
-      case '8': leftX= "33%";break;
-      case '9': leftX= "67%";break;
-      default : leftX = "0"
-    }
-    //设置头部位置
-    self.setData({
-      newsActive:selType,
-      posX: leftX
-    });
-    //加载数据
-    var self = this;
-    this.model = new BaseModel();
-    this.model.loadData({
-      path: "/tscnews/selectNewsForApplet",
-      data: {
-        newsType: selType
-      },
-      success: function (res) {
-        if (res.status == "SUCCESS" && res.data) {
-          var itemList = self.data.items;
-          itemList = itemList.concat(res.data.news);
-          console.log(itemList);
-          self.setData({
-            items: itemList,
-            getMore: self.model.hasNextPage()
-          });
-        }
-      }
-    });
-  },
   goArticle:function(e){
    var dtSet =  e.currentTarget.dataset;
    var articleId = dtSet.articleid;
@@ -63,33 +33,41 @@ Page({
     wx.setNavigationBarTitle({
       title: list[param.id - 1]
     })
-    this.model.loadData({
-      path: "/tscnews/selectNewsForApplet",
-      data: {
-        newsType: param.id
-      },
-      success: function (res) {
-        if (res.status == "SUCCESS" && res.data) {
-          var itemList = self.data.items;
-          itemList = itemList.concat(res.data.news);
-          for (var i in itemList) {
-            itemList[i].newsThumbnail = itemList[i].newsThumbnail && itemList[i].newsThumbnail.replace(/\\/g, "/");
-          }
-          self.setData({
-            items: itemList,
-            getMore: self.model.hasNextPage()
-          });
-        }
 
-      }
-    });
+    if (param.id == 1){
+      this.setData({
+        eatList: eatData.postList[0].data.news
+      })
+      console.log(eatData.postList[0].data.news)
+    } else if (param.id == 2){
+      this.setData({
+        eatList: zhuData.postList[0].data.news
+      })
+    } else if (param.id == 3) {
+      this.setData({
+        eatList: walkData.postList[0].data.news
+      })
+    } else if (param.id == 4) {
+      this.setData({
+        eatList: youData.postList[0].data.news
+      })
+    } else if (param.id == 5) {
+      this.setData({
+        eatList: shopData.postList[0].data.news
+      })
+    } else if (param.id == 6) {
+      this.setData({
+        eatList: yuData.postList[0].data.news
+      })
+    }else{
+      console.log('nobody')
+    }
+     
+    
+   
+ 
+    // console.log(eatData.postList[0].data.news)
+
   },
-  pullListEnd:function(e){
-    var self = this;
-    var pushHandle = new PushHandle(function(){
-      self.model.getNextPage();
-    });
-    pushHandle.isListEnd(e);
-  }
   
 })

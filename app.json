@@ -21,9 +21,9 @@
     "pages/index-dynamic/index-dynamic",
     "pages/w-guide/w-guide",
     "pages/w-circuit/w-circuit",
-    "pages/w-specialty/w-specialty",
-    "pages/swiper/swiper",
-    "pages/data/data"
+    "pages/w-hotel-comment/w-hotel-comment",
+    "pages/w-guide-details/w-guide-details"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",

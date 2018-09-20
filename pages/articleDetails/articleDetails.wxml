@@ -2,10 +2,17 @@
 
   <view class="container">
     <view class="title">
-      {{title}}
+      {{eatdetailList.newsName }}
     </view>
       <view class="relaceDate">
-      {{time}}
+     {{eatdetailList.infoModifiedtime }}
     </view>
-    <template class="content" is="wxParse" data="{{wxParseData:article.nodes}}"/>
+    <!-- <template class="content" is="wxParse" data="{{wxParseData:article.nodes}}"/> -->
+
+     <view>
+        <view class='parag'>{{eatdetailList.newsDescribe1 }}</view>
+        <image class='detailimg' src='{{eatdetailList.newsThumbnail}}'></image>
+        <view class='parag'>{{eatdetailList.newsDescribe2}}</view>
+     </view>
+
   </view>
