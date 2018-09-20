@@ -1,0 +1,53 @@
+<!--pages/w-guide-details/w-guide-details.wxml-->
+<view id="content" class="tourDetail">
+  <view>
+    <view class="top">
+      <image class='bgimage' src='../../image/w-mall/guided.jpg'></image>
+      <image class="tourphoto" src='../../image/w-mall/dy_06.jpg'></image>
+    </view>
+    <view class="tourname">东方</view>
+    <view class="link">
+      <view>
+        <image src='../../image/w-mall/tel.png'></image> 15932000248</view>
+      <view class="weichart">
+        <image src='../../image/w-mall/wei.png'></image>微信交谈</view>
+      <view></view>
+    </view>
+    <view class="link1">
+      <text>销量：2     |     满意度：100%</text>
+      <navigator class='dian'>点评 ></navigator>
+    </view>
+    <view class='bg'></view>
+
+  </view>
+
+  <view class='guideList'>
+    <view class='gl'>
+      <view class='gtitle'>优惠套餐价</view>
+      <view class='gdes'>石林五日游</view>
+    </view>
+    <view class='gr'>
+      ￥
+      <text class='gprice'>1280</text>
+      <text class='gtext'>起</text>
+      <navigator class='reserve'>预订</navigator>
+    </view>
+  </view>
+
+  <view class='details '>
+    <view class='bgt'>
+      <text></text> 服务宗旨</view>
+    <view class='parag'>
+      1、为您提供热情、周到、细致的服务，生动活泼的讲解。 2、持国家旅游局颁发的《导游证》带团，保证服务质量。 3、坚持三不原则：不私自带客人进入收取回佣的购物店；不私自增加约定行程之外的其他消费点；不推荐客人进入非法性的消费场所。 4、全程陪同讲解，提供能够为您提供吃、住、行、游、购、娱等各方面的向导服务。
+
+    </view>
+
+ <view class='bgt'>
+      <text></text> 产品详情</view>
+    <view class='parag'>
+      用胶片记录那些美好的景致，静止注定逝去的幻象，定格温暖的回忆，然后让它们慢慢变得陈旧而安静，搁浅在岁月低处落上尘埃。
+
+    </view>
+  </view>
+
+</view>

@@ -133,3 +133,11 @@ image.slide-image {
 .slmap{
   width:100%;
 }
+
+.map{
+  width: 690rpx;
+  height: 378rpx;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30rpx;
+}

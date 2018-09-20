@@ -14,7 +14,7 @@
       <block wx:for="{{guideList}}">
     <view class="up-list">
       <view class="up-list-item">
-        <navigator url="../w-ticket-details/w-ticket-details?id={{item.aid}}">
+        <navigator url="/pages/w-guide-details/w-guide-details?id={{item.aid}}">
           <view class="item-desc-container">
             <image class="item-img" src="{{item.litpic}}"></image>
             <view class="info-view">

@@ -5,10 +5,12 @@
           <view class="dynamic-msg-date">{{item.infoModifiedtime}}</view>
           <view class="dynamic-msg-content" >
               <view style="" class="content-img" style='background:url({{item.newsThumbnail}})no-repeat 0 0;background-size:cover'>
+
                  <image class="img"src=""></image>
+
               </view>
               <view class="content-describe">{{item.newsFingerpint}}</view>
-              <view class='knownMore'>[更多内容]</view>
+              <view class='knownMore'>>> 查看详情</view>
           </view>
           <view class="dynamic-msg-cut"></view>
       </view>

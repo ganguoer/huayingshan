@@ -1,0 +1,146 @@
+/* pages/w-guide-details/w-guide-details.wxss */
+
+.tourDetail .top {
+  position: relative;
+  z-index: 1;
+}
+
+.tourDetail .tourname {
+  width: 100%;
+  text-align: center;
+  margin-top: 45rpx;
+  color: #000;
+  font-size: 28rpx;
+}
+
+.bgimage {
+  width: 100%;
+  height: 370rpx;
+}
+
+.tourDetail .tourphoto {
+  position: absolute;
+  bottom: -40rpx;
+  left: 50%;
+  margin-left: -76rpx;
+  width: 152rpx;
+  height: 152rpx;
+  border-radius: 76rpx;
+  z-index: 2;
+}
+
+.link {
+  font-size: 24rpx;
+  color: #666;
+  display: flex;
+  padding: 26rpx 30rpx;
+  border-bottom: 3rpx solid #f6f6f6;
+}
+
+.link view {
+  flex: 1;
+}
+
+.link image {
+  width: 27rpx;
+  height: 27rpx;
+  margin-right: 10rpx;
+}
+
+.link1 {
+  display: flex;
+  justify-content: flex-end;
+  padding: 26rpx 30rpx;
+}
+
+.link1 text {
+  flex: 6;
+  font-size: 24rpx;
+  color: #666;
+}
+
+.link1 .dian {
+  flex: 1;
+  font-size: 24rpx;
+  color: #ee9906;
+   text-align: right;
+}
+
+.bg {
+  width: 100%;
+  height: 22rpx;
+  background: #f6f6f6;
+}
+
+.guideList {
+  padding: 20rpx 30rpx;
+  display: flex;
+}
+.gl{
+flex: 4;
+}
+.gtitle{
+   font-size: 28rpx;
+  color: #222222;
+   font-weight: 700;
+   padding-bottom: 12rpx;
+}
+.gdes{
+font-size: 24rpx; 
+  color: #8e8e8e;
+}
+.gr{
+  flex: 2;
+  text-align: right;
+  font-size: 24rpx;
+  color: #fb5957;
+}
+
+.gprice{
+  font-size: 32rpx; 
+  color: #f73e3e;
+  font-weight: 700;
+}
+.gtext{
+  font-size: 24rpx; 
+  color: #8e8e8e;
+}
+.reserve{
+  font-size: 24rpx; 
+  color: #fff;
+  width: 126rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 25rpx;
+  display: block;
+  background: #ee9906;
+  text-align: center;
+  margin-left:100rpx;
+  margin-top: 36rpx;
+}
+
+.bgt{
+   width: 100%;
+  height: 66rpx;
+  line-height: 66rpx;
+  background: #f6f6f6;
+   font-size: 28rpx; 
+  color: #333333;
+  padding-left: 30rpx;
+}
+.bgt text{
+  background: #0ca2e1;
+  font-weight: 700;
+  width: 8rpx;
+  height: 33rpx;
+  margin-top: 4rpx;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 10rpx;
+}
+.parag{
+   font-size: 24rpx; 
+  color: #333333;
+  padding: 30rpx;
+  line-height: 45rpx;
+}

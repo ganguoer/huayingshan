@@ -172,8 +172,8 @@ navigator image{
 .reserve {
   /* width: 25%; */
   padding: 10rpx 30rpx;
-  border-radius: 15rpx;
-  background: #fe3c3c;
+  border-radius: 25rpx;
+  background: #fba207;
   color: #fff;
   margin-right: 76rpx;
   margin-top: 16rpx;
@@ -202,17 +202,25 @@ navigator image{
 }
 .facilities{
   font-size: 30rpx;
-  color: #666;
+  color: #0ca2e1;
   padding: 0rpx 29rpx ;
 }
  .facilities-con{
-  /* font-size: 24rpx!important; */
-  /* font-family: 'Microsoft YaHei', 微软雅黑, 'Arial, sans-serif, SimSun'; */
-  padding: 6rpx 10rpx;
-  /* color: #8e8e8e!important; */
-  /* line-height:170%; */
+   /* font-size: 24rpx!important; 
+   font-family: 'Microsoft YaHei', 微软雅黑, 'Arial, sans-serif, SimSun';  */
+   padding: 30rpx;
+   color: #8e8e8e!important; 
+   /* line-height:170%;  */
 
 } 
+.facilities-con view{
+  text-indent: 2em;
+  font-size: 24rpx;
+    font-family: 'Microsoft YaHei', 微软雅黑, 'Arial, sans-serif, SimSun'; 
+    line-height: 46rpx;
+    color: #444;
+   
+}
 .biaoqian_danlan.wxParse-span.wxParse-inline,
 .biaoqian_danlv.wxParse-span.wxParse-inline{
    color: rgb(51, 127, 229)!important;

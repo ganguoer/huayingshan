@@ -1,4 +1,4 @@
-// pages/w-specialty/w-specialty.js
+// pages/w-hotel-comment/w-hotel-comment.js
 Page({
 
   /**

@@ -17,7 +17,7 @@
         <view class="up-list-item">
           <navigator url="../w-hotel-details/w-hotel-details?id={{item.aid}}">
             <view class="item-desc-container">
-              <image class="item-img" src="https://shilin.citgroup.cn{{item.litpic}}"></image>
+              <image class="item-img" src="{{item.litpic}}"></image>
               <view class="info-view">
                 <text class="title">{{item.title}}</text>
                 <view class="item-footer">

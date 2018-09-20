@@ -11,16 +11,16 @@
 </view>
 <!--点评和地图  -->
 <view class="board">
-  <!-- <view class="board-item">
+   <view class="board-item">
     <view class="word">
       <text class='score'>4.5分</text>
-      <text class='comment'>{{info1.recommendnum}}条点评</text>
+      <text class='comment'>185条点评</text>
     </view>
-    <navigator class='comment-n' url='#' hover-class="none">点评
-      <image src="../../image/w-mall/arrow-right.png" />
+    <navigator class='comment-n' url='/pages/w-hotel-comment/w-hotel-comment' hover-class="none">点评
+      <!-- <image src="../../image/w-mall/arrow-right.png" /> -->
     </navigator>
 
-  </view> -->
+  </view> 
   <view class="board-item">
    <image class='add' src='../../image/w-mall/address.png'></image>
     <text class='address'>位于瓦店乡华蓥山旅游区，近地质公园。</text>
@@ -39,26 +39,27 @@
        房间类型
   </view>
   <!--入住酒店列表  -->
-  <block wx:for="{{list}}">
+  <block >
   <view class="up-list">
     <view class="up-list-item">
       <view class="item-desc-container" bindtap="kindToggle">
-        <image class="item-img" src="https://shilin.citgroup.cn{{item.piclist}}"></image>
+        <image class="item-img" src="../../image/w-mall/hotel.jpg"></image>
         <view class="info-view">
-          <text class="title-l">{{item.roomname}}</text>
+          <text class="title-l">标准景观双床房</text>
           <view class="item-footer">
-            <text>{{item.roomstyle}}</text>
-            <text>{{item.breakfirst}}</text>
+            <text>27m2</text>
+            <text>大床</text>
+            <text>8-17层</text>
           </view>
         </view>
       </view>
       <view class='bind-right'>
         <view class="price">
           <text class='rmb'>￥</text>
-          <text class='number'>{{item.price}}</text>
+          <text class='number'>321</text>
         </view>
         <view class="reser">
-          <navigator class='reserve' url="/pages/hotel-reserve/hotel-reserve?title={{info1.title}}&roomname={{item.roomname}}&price={{item.price}}&hotelid={{info1.aid}}&suitid={{item.id}}" hover-class="none">预定</navigator>
+          <navigator class='reserve'  hover-class="none">预定</navigator>
         </view>
       </view>
       <!--下拉内容  -->
@@ -67,6 +68,31 @@
              房型说明：不可加床该房型可安排无烟楼层；该房型有无烟房；该房可无烟处理便利设施：雨伞、110V电压插座、空调、书桌、房内保险箱媒体/科技：国内长途电话、电脑食品和饮品：电热水壶、咖啡壶/茶壶、免费瓶装水、小冰箱浴室：24小时热水、拖鞋、浴室化妆放大镜、浴衣、独立淋浴间、吹风机、免费洗漱用品(6样以上)室外/景观：城景、地标景服务及其他：唤醒服务、语音留言、免费报纸
         </view>
       </view> -->
+    </view>
+  </view>
+  <view class="up-list">
+    <view class="up-list-item">
+      <view class="item-desc-container" bindtap="kindToggle">
+        <image class="item-img" src="../../image/w-mall/hotel.jpg"></image>
+        <view class="info-view">
+          <text class="title-l">豪华景观大床房</text>
+          <view class="item-footer">
+            <text>28m2</text>
+            <text>大床</text>
+            <text>8-17层</text>
+          </view>
+        </view>
+      </view>
+      <view class='bind-right'>
+        <view class="price">
+          <text class='rmb'>￥</text>
+          <text class='number'>300</text>
+        </view>
+        <view class="reser">
+          <navigator class='reserve'  hover-class="none">预定</navigator>
+        </view>
+      </view>
+     
     </view>
   </view>
   </block> 
@@ -79,9 +105,9 @@
 
 <!--酒店设施内容  -->
 <view class='facilities-con'>
- 
-     <template class="content" is="wxParse" data="{{wxParseData:content.nodes}}"/>
- 
+   <view>联系方式 : 电话0826-4330888传真0826-4330555</view>
+    <view>基本信息 : 2004年开业2016年最后一次装修417间客房层高6层</view>
+      <view>酒店简介 : 酒店位于瓦店乡华蓥山旅游区，近地质公园，周围环境清幽，舒适。 酒店集住宿、餐饮、娱乐、会议、休闲、商务、旅游为一体，建筑面积2万平方米，拥有各式客房百余间/套。为满足客人需求，另设景区内非星级住宿客栈三座（幺妹客栈、逸居缘客栈、情山客栈），拥有各类房型两百余间/套。 酒店内设中/西式餐厅、豪华包间、音乐水吧、大型多功能会议室和各类小型会议室、商务洽谈中心、健身房、茶房等综合服务设施。酒店设施完善，环境幽雅，停车便捷，是休闲养生避暑度假的上佳去处。 酒店特聘成都斯隆（西点）酒店管理公司团队进行经营管理，公司秉承斯隆（西点）的管理法则，坚持“宾客的服务，要不断要求；宾客的满意，要不断追求”的服务理念，以“热情、真诚、朴实、亲切”的服务恭候每位客人的光临。</view>
 </view>
 <!-- 酒店设施 -->
 <view class='bg-facilities'>
@@ -90,32 +116,31 @@
 
 <!--酒店设施内容  -->
 <view class='facilities-con'>
- 
-     <template class="content" is="wxParse" data="{{wxParseData:spot.nodes}}"/>
- 
+ <view>行李寄存 专职行李员 免费旅游交通图 邮政服务</view>
+     <view>24小时大堂经理 礼宾服务 叫醒服务 一次性账单结算 </view>
+<view>24小时前台 专职门童 旅游票务 信用卡结算</view>
 </view>
 
 <!-- 酒店设施 -->
 <view class='bg-facilities'>
-  <text class='facilities'>酒店交通</text>
+  <text class='facilities'>酒店政策</text>
 </view>
 
 <!--酒店设施内容  -->
 <view class='facilities-con'>
- 
-     <template class="content" is="wxParse" data="{{wxParseData:traffic.nodes}}"/>
- 
+ <view>不接受18岁以下客人单独入住。</view>
+  <view>入住时间：14：00以后 离店时间：12：以前</view>    
 </view>
 
 <!-- 酒店设施 -->
 <view class='bg-facilities'>
-  <text class='facilities'>酒店提示</text>
+  <text class='facilities'>膳食安排 </text>
 </view>
 
 <!--酒店设施内容  -->
 <view class='facilities-con'>
- 
-     <template class="content" is="wxParse" data="{{wxParseData:notice.nodes}}"/>
+ <view>自助早餐 RMB 58</view>
+     <!-- <template class="content" is="wxParse" data="{{wxParseData:notice.nodes}}"/> -->
  
 </view>
 
