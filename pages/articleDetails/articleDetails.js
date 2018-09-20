@@ -1,4 +1,6 @@
-var articleDetails = require('../../data/articleDetails.js');
+// var articleDetails = require('../../data/articledetail.js');
+var articleDetails = require('../../data/articledetail.js');
+
 
 
 var WxParse = require('../../wxParse/wxParse.js');
@@ -22,10 +24,9 @@ Page({
     console.log(options.articleId);
     
     var id = options.articleId;
-    console.log(id)
-    var self = this;
+   
     this.setData({
-      articleDetails: hotelData.postList[0].data.news
+      articleDetails: articleDetails.postList[0].data
     })
     // this.model = new BaseModel({
     //   path: "/tscnews/info",
