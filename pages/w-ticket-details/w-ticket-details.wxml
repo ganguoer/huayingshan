@@ -2,14 +2,14 @@
 <import src="../../wxParse/wxParse.wxml" />
 
 <view class='d-top'>
-  <image class='ticket-details' src='https://shilin.citgroup.cn{{info1.litpic}}'></image>
+  <image class='ticket-details' src='../../image/w-mall/ticket-details.jpg'></image>
 </view>
 <view class='address'>
   <image class='add' src='../../image/w-mall/address.png'></image>
-  <text>{{info1.address}}</text>
+  <text>四川省广安华蓥市红岩乡高顶村华蓥山旅游区</text>
   <!-- <image class='arrow-right' src='../../image/w-mall/arrow-right.png'></image> -->
 </view>
-<view class='address' >
+<!-- <view class='address' >
   <image class='theme' src='../../image/w-mall/theme.png'></image>
   <text>景区主题：{{info1.sellpoint}}</text>
   
@@ -17,17 +17,17 @@
 <view class='address'>
   <image class='ticket' src='../../image/w-mall/ticket.png'></image>
   <text>取票方式：{{info1.getway}}</text>
-</view>
+</view> -->
 <!--票价  -->
 <view class='bg'></view>
 <view class='ticket'>
   <view class='top'>
-    <view class='border'>门票</view>
+    <view class='border'>成人票</view>
   </view>
-  <block wx:for="{{list}}">
+  <block >
   <view class='content'>
     <view class='l'>
-      <text class='subtitle'>{{info1.title}}({{item.title}})</text>
+      <text class='subtitle'>四川省广安华蓥市红岩乡高顶村华蓥山旅游区</text>
       <view class='color'>
         <image class='right' src='../../image/w-mall/right.png'></image>
         <text class='sub-det'>支付方式：全款支付</text>
@@ -36,27 +36,81 @@
     </view>
     <view class='r'>
       <text class='rmb'>￥</text>
-      <text class='number'>{{info1.price}}</text>
+      <text class='number'>105</text>
       <navigator class='pay' url="/pages/navigate/navigate" hover-class="none">在线支付</navigator>
-      <navigator class='reserve' url="/pages/ticket-reserve/ticket-reserve?title={{info1.title}}({{item.title}})&price={{info1.price}}&productid={{info1.aid}}&suitid={{info3.id}}" hover-class="none">预订</navigator>
+      <navigator class='reserve'  hover-class="none">预订</navigator>
+    </view>
+  </view>
+  </block>
+</view>
+<view class='bg'></view>
+<view class='ticket'>
+  <view class='top'>
+    <view class='border'>学生票</view>
+  </view>
+  <block >
+   <view class='content'>
+    <view class='l'>
+      <text class='subtitle'>四川省广安华蓥市红岩乡高顶村华蓥山旅游区</text>
+      <view class='color'>
+        <image class='right' src='../../image/w-mall/right.png'></image>
+        <text class='sub-det'>支付方式：全款支付</text>
+      </view>
+      <!-- <text class='sub-det known'>购买须知 ></text> -->
+    </view>
+    <view class='r'>
+      <text class='rmb'>￥</text>
+      <text class='number'>87.5</text>
+      <navigator class='pay' url="/pages/navigate/navigate" hover-class="none">在线支付</navigator>
+      <navigator class='reserve'  hover-class="none">预订</navigator>
     </view>
   </view>
   </block>
 </view>
 
+<view class='bg'></view>
+<view class='ticket'>
+  <view class='top'>
+    <view class='border'>园内其他票</view>
+  </view>
+  <block >
+   <view class='content'>
+    <view class='l'>
+      <text class='subtitle'>【电子导游（不含景区门票）】华蓥山景区只能 中文语音讲解</text>
+      <view class='color'>
+        <image class='right' src='../../image/w-mall/right.png'></image>
+        <text class='sub-det'>支付方式：全款支付</text>
+      </view>
+      <!-- <text class='sub-det known'>购买须知 ></text> -->
+    </view>
+    <view class='r'>
+      <text class='rmb'>￥</text>
+      <text class='number'>8</text>
+      <navigator class='pay' url="/pages/navigate/navigate" hover-class="none">在线支付</navigator>
+      <navigator class='reserve' hover-class="none">预订</navigator>
+    </view>
+  </view>
+  </block>
+</view>
 
 <view class='bg'></view>
 <view class='ticket'>
   <view class='top'>
-    <view class='border'>门票信息</view>
+    <view class='border'>门票预订说明</view>
   </view>
 </view>
   
     <view class='txt'>
-      <template class="content" is="wxParse" data="{{wxParseData:booknotice.nodes}}" />
+      <!-- <template class="content" is="wxParse" data="{{wxParseData:booknotice.nodes}}" /> -->
+      <view >
+       <image class='right' src='../../image/w-mall/right.png'></image>
+      <text class='detail_ticket'>优惠政策</text>
+      </view>
+      <text class='youhui'>1、现役及军队离退休人员、凭《中国人民解放军军官证》、《士兵》或武警《警官证》可享受免票； 2、记者，凭国家新闻出版总署或广播电视总局颁发的《记者证》、《摄影记者证》可享受免票； 3、摄影家协会会员，凭国家摄影家协会会员证，可享受免票； 4、道教教职人员，凭由中国道教协会统一印制，省、自治区、直辖市道教协会颁发的教职人员认定证书，可享受免票； 5、65周岁及以上老年人，凭本人身份证、护照、驾照、台胞证，可享受免票； 6、带团导游、旅行社经理，凭全国导游IC卡证、总经理资格证或三清山讲解员证，可享受免票； 7、身高1.2米以下的儿童可享受免票，1.2米至1.5米儿童可享受优惠票； 8、残疾人，凭《中华人民共和国残疾人证》享受优惠票，持有国家残联颁发的一至四等残疾证的残疾人士可享受免票； 9、全日制统招本科、大专、中专、初高中、高职技校、小学生、凭有效注册的在读学生证（单凭高考准考证无效），享受优惠票，其他如研究生、成人教育生、自考生、短期进修者等均不享受优惠。
+      </text>
     </view>
 
     <view class='txt'>
-      <template class="content" is="wxParse" data="{{wxParseData:content.nodes}}" />
+      <!-- <template class="content" is="wxParse" data="{{wxParseData:content.nodes}}" /> -->
       
     </view>

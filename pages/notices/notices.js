@@ -15,7 +15,7 @@ Page({
     winHeight: 0,
     // tab切换 
     currentTab: 0,
-    mid:''
+    mid: ''
   },
   onLoad: function (options) {
 
@@ -41,10 +41,10 @@ Page({
   //   //tab跳转
   //   that.setData({
   //     currentTab: options.id,
-      
+
   //   })
   //   console.log(that.data.currentTab);
-  
+
   //   wx.getStorage({
   //     key: 'order',
   //     success: function (res) {
@@ -52,7 +52,7 @@ Page({
   //       that.ordersn = res.data;
   //     },
   //   });
-   
+
   //   that.mid = wx.getStorageSync('mid');
 
   //   if (this.data.currentTab === options.id) {
@@ -81,14 +81,14 @@ Page({
   //     })
   //   }
 
-    
+
   //   wx.showToast({
   //     title: "加载中...",
   //     icon: "loading",
   //     duration: 10000
   //   });
 
-  
+
   // },
   // 滑动切换tab 
   bindChange: function (e) {
@@ -120,7 +120,7 @@ Page({
     // wx.request({
     //   url: config.myOrder + type + '?mid='+ that.mid,
     //   data: {
-       
+
     //   },
     //   method: 'GET',
     //   header: {
@@ -135,7 +135,7 @@ Page({
     //   }
     // })
   },
-  
+
   // waitPay:function(){
   //   var that = this; 
   //   wx.login({

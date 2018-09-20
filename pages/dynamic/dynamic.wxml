@@ -4,15 +4,67 @@
       <view class='news' bindtap = "getSelType" data-selid = "7" style='{{newsActive == 7 ? "color#666" : "color:#ddd"}}'>景区动态</view>
       <view class='research' bindtap = "getSelType" data-selid = "8" style='{{newsActive == 8 ? "color#666" : "color:#ddd"}}'>近期活动</view>
       <view class='cuxiao' bindtap = "getSelType" data-selid = "9" style='{{newsActive == 9 ? "color#666" : "color:#ddd"}}'>营销活动</view>
-        <view class='shuju' bindtap = "getSelType" data-selid = "10" style='{{newsActive == 10 ? "color#666" : "color:#ddd"}}'>大数据</view> 
+      <view class='shuju' bindtap = "getSelType" data-selid = "10" style='{{newsActive == 10 ? "color#666" : "color:#ddd"}}'>信息服务</view> 
       <view class="line" style='left:{{posX}}'>
-        
       </view>
   </view>
-  <view class="container">
-    <block  wx:for="{{items}}" wx:key = "*this" wx:for-item = "item">
-      <template is = "dynamicItem" data = "{{item}}"></template> 
+  <view class="container" wx:if="{{newsActive != 10}}" >
+    <block  wx:for="{{dynamics}}" wx:key = "*this" wx:for-item = "item">
+      <view >
+        <template is = "dynamicItem" data = "{{item}}"></template> 
+      </view>
     </block>
+ </view>
+
+  <view wx:else>
+    <image src="../../image/22.jpg" class="imgtxt" />
+    <view class="totalmsg">
+      <image src='../../image/location4.png' class="car_tip"></image>
+      <view class="textps">
+        <text> 华蓥山 hua Ying Mountain</text>
+        <text> 进 000  出 000</text>
+      </view>
+    </view>
+    <view class='totalmsg2'>
+      <view class='flexdiv'>
+        <view class="car_tip2">华蓥山p2</view>
+        <view class="carnum">
+          <view class="carnums">停车剩余数量60辆</view>
+          <view class="circle"></view>
+        </view>
+      </view>
+      <view class='flexdiv'>
+        <view class="car_tip2">华蓥山p2</view>
+        <view class="carnum">
+          <view class="carnums">停车剩余数量60辆</view>
+          <view class="circle"></view>
+        </view>
+      </view>
+      <view class='flexdiv'>
+        <view class="car_tip2">华蓥山p2</view>
+        <view class="carnum">
+          <view class="carnums">停车剩余数量60辆</view>
+          <view class="circle"></view>
+        </view>
+      </view>
+      <view class='flexdiv'>
+        <view class="car_tip2">华蓥山p2</view>
+        <view class="carnum">
+          <view class="carnums">停车剩余数量60辆</view>
+          <view class="circle"></view>
+        </view>
+      </view>
+    </view>
+    <view class="weaters">
+      <image src="../../image/d.png" class='imgweater'></image>
+      <text class="hotstxt">
+        <text class='dushu'>26C</text>
+        <text class='yun'>多云  西北风</text>
+      </text>
+    </view>
   </view>
-  <view class="getMore">{{getMore ?  "下拉获取更多" : "已加载全部"}}</view>
+
+  <block wx:if = "{{newsActive != 10}}">
+      <view class="getMore">{{getMore ?  "下拉获取更多" : "已加载全部"}}</view>
+  </block>
 </view>

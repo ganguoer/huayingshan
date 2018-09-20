@@ -12,7 +12,7 @@
   <!--垂直滚动，这里必须设置高度-->
   <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" class="list">
 
-    <block wx:for="{{posts_key}}">
+    <block wx:for="{{hotelList}}">
       <view class="up-list">
         <view class="up-list-item">
           <navigator url="../w-hotel-details/w-hotel-details?id={{item.aid}}">

@@ -18,30 +18,30 @@
 
   <view class="flex-wrp" style="flex-direction:row;">
     <view class="flex-item w-item1">
-       <navigator url="/pages/w-guide/w-guide" hover-class="navigator-hover">
+       <navigator url="/pages/w-ticket/w-ticket" hover-class="navigator-hover">
              <view class="w-nav">
-               <image class="guide" src="https://mjw.citgroup.cn/mapImages/image/w-mall/w-guide.png"/>
-               <text>导游</text>
+               <image class="guide" src="../../image/w-mall/scenic.png"/>
             </view> 
+            <text>门票</text>
        </navigator>
     </view>
     <view class="flex-item w-item2">
         <navigator url="/pages/w-hotel/w-hotel" hover-class="navigator-hover">
              <view class="w-nav">
-               <image class="hotel" src="https://mjw.citgroup.cn/mapImages/image/w-mall/w-hotel.png"/>
-               <text>酒店</text>
+               <image class="hotel" src="../../image/w-mall/hotelbg.png"/>        
             </view> 
+            <text>酒店</text>
        </navigator>
     
     </view>
   </view>
    <view class="flex-wrp" style="flex-direction:row;">
     <view class="flex-item-m w-item3">
-        <navigator url="/pages/w-ticket/w-ticket" hover-class="navigator-hover">
+        <navigator url="/pages/w-guide/w-guide" hover-class="navigator-hover">
              <view class="w-nav">
-               <image class="ticket" src="https://mjw.citgroup.cn/mapImages/image/w-mall/w-ticket.png"/>
-               <text>景区门票</text>
+               <image class="ticket" src="../../image/w-mall/guidebg.png"/>
             </view> 
+             <text>导游</text>
        </navigator>
     </view>
   </view>

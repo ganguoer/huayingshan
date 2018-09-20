@@ -9,3 +9,5 @@
     </view>
     <template class="content" is="wxParse" data="{{wxParseData:article.nodes}}"/>
   </view>
+
+

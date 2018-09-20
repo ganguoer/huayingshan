@@ -23,56 +23,28 @@ display:flex;
 }
 
 .w-item1{
-position:relative;
-align-items:center;
-justify-content:center;
-background-color:#4e9eed;
+background: linear-gradient(to right,#61d9f3,#6897d6);
 color:#FFFFFF;
 margin-right: 9rpx;
-border-radius: 26rpx 0 0 0;
 }
 
 .w-item2{
-position:relative;
-align-items:center;
-justify-content:center;
-background-color:#fb5957;
+background: linear-gradient(to right,#44baa5,#4bbf4b);
 color:#FFFFFF;
-border-radius:0 26rpx  0 0;
 }
 
 
 .flex-item-m{
   width:689rpx;
-  height:230rpx;
+  height:246rpx;
   font-size:26rpx;
 }
 
 .w-item3{
-position:relative;
-align-items:center;
-justify-content:center;
-background-color:#f99135;
+background: linear-gradient(to right,#f9bf24,#f4c545,#f05d79);
 color:#FFFFFF;
-}
-.w-item4{
-position:relative;
-align-items:center;
-justify-content:center;
-background-color:#59ce72;
-color:#FFFFFF;
-margin-right: 9rpx;
-border-radius:0 0 0 26rpx ;
 }
 
-.w-item5{
-position:relative;
-align-items:center;
-justify-content:center;
-background-color:#35c2aa;
-color:#FFFFFF;
-border-radius:0 0 26rpx 0;
-}
 
 navigator{
   width: 100%;
@@ -81,27 +53,29 @@ navigator{
   vertical-align: baseline;
 }
 .w-nav{
-  padding: 56rpx 0;
+  padding: 10rpx 0;
   vertical-align: middle;
 }
 image{
   vertical-align: middle;
 }
 text{
-  vertical-align: middle;
-  font-size: 36rpx;
+ text-align: center;
+  font-size: 30rpx;
 }
 .guide{
-  width: 124rpx;
-  height: 106rpx
+  width: 70%;
+  height: 160rpx;
 }
 .hotel{
-  width: 113rpx;
-  height: 110rpx
+ width: 100%;
+  height: 128rpx;
+  padding-top: 20rpx;
 }
 .ticket{
-  width: 109rpx;
-  height: 120rpx
+ width: 80%;
+  height: 146rpx;
+  padding-top: 10rpx;
 }
 .circuit{
   width: 134rpx;

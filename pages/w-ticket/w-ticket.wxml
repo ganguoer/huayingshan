@@ -12,7 +12,7 @@
 <view class="container" style="padding:0rpx">
   <!--垂直滚动，这里必须设置高度-->
   <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" class="list" bindscrolltolower="bindDownLoad" bindscroll="scroll">
-      <block wx:for="{{list}}">
+      <block wx:for="{{ticketList}}">
     <view class="up-list">
       <view class="up-list-item">
         <navigator url="../w-ticket-details/w-ticket-details?id={{item.aid}}">

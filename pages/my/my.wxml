@@ -43,7 +43,7 @@
 <view class='row'></view>
 <view class='order'>
   <text class='my-order'>消息</text>
-  <navigator class='check-all' url='/pages/message/message'>
+  <navigator class='check-all' url='/pages/notices/notices'>
     查看详情
     <image class='rightArrow' src='../../image/home/rightArrow.png'></image>
   </navigator>

@@ -1,10 +1,13 @@
+
+var dynamic = require('../../data/dynamic.js')
+
 var request = require("../../libs/proxy.js");
 var PushHandle = require("../../libs/doPull.js"); //simpleCall
 var BaseModel = request.BaseModel;
 //var BaseModel = request.simpleCall;
 Page({
   data: {
-    getMore:true,
+    getMore:false,
     newsActive:7,
     items:[]
   },
@@ -29,27 +32,40 @@ Page({
     //加载数据
     var self = this;
     this.model = new BaseModel();
+    if (selType == 7) {
+      this.setData({
+        dynamics: dynamic.postList[0].data.news
+      })
+    }else if (selType==8){
+      this.setData({
+        dynamics: dynamic.postList[0].data.news2
+      })
+    }else if(selType==9){
+      this.setData({
+        dynamics: dynamic.postList[0].data.news3
+      })
+    }
 
-    this.model.loadData({
-      path: "/tscnews/selectNewsForApplet",
-      data: {
-        newsType: selType
-      },
-      success: function (res) {
-        if (res.status == "SUCCESS" && res.data) {
-          var itemList = self.data.items;        
-          itemList = itemList.concat(res.data.news);
-          for (var i in itemList) {
-            itemList[i].newsThumbnail = itemList[i].newsThumbnail && itemList[i].newsThumbnail.replace(/\\/g, "/");
-            console.log(itemList[i].newsThumbnail);
-          }
-          self.setData({
-            items: itemList,
-            getMore: self.model.hasNextPage()
-          });
-        }
-      }
-    });
+    // this.model.loadData({
+    //   path: "/tscnews/selectNewsForApplet",
+    //   data: {
+    //     newsType: selType
+    //   },
+    //   success: function (res) {
+    //     if (res.status == "SUCCESS" && res.data) {
+    //       var itemList = self.data.items;        
+    //       itemList = itemList.concat(res.data.news);
+    //       for (var i in itemList) {
+    //         itemList[i].newsThumbnail = itemList[i].newsThumbnail && itemList[i].newsThumbnail.replace(/\\/g, "/");
+    //         console.log(itemList[i].newsThumbnail);
+    //       }
+    //       self.setData({
+    //         items: itemList,
+    //         getMore: self.model.hasNextPage()
+    //       });
+    //     }
+    //   }
+    // });
   },
   goArticle:function(e){
    var dtSet =  e.currentTarget.dataset;
@@ -63,27 +79,33 @@ Page({
   onLoad: function () {
     var self = this;
     this.model = new BaseModel();
+      this.setData({
+        dynamics: dynamic.postList[0].data.news
+      })
+      // console.log(that.posts_key)
+    console.log(dynamic.postList[0].data.news)
 
-    this.model.loadData({
-      path: "/tscnews/selectNewsForApplet",
-      data: {
-        newsType: "7"
-      },
-      success: function (res) {
-        if (res.status == "SUCCESS" && res.data) {
-          var itemList = self.data.items;         
-          itemList = itemList.concat(res.data.news);
-          for (var i in itemList) {
-            itemList[i].newsThumbnail = itemList[i].newsThumbnail && itemList[i].newsThumbnail.replace(/\\/g,"/");            
-          }
-          self.setData({
-            items: itemList,
-            getMore: self.model.hasNextPage()
-          });
-        }
 
-      }
-    });
+    // this.model.loadData({
+    //   path: "/tscnews/selectNewsForApplet",
+    //   data: {
+    //     newsType: "7"
+    //   },
+    //   success: function (res) {
+    //     if (res.status == "SUCCESS" && res.data) {
+    //       var itemList = self.data.items;         
+    //       itemList = itemList.concat(res.data.news);
+    //       for (var i in itemList) {
+    //         itemList[i].newsThumbnail = itemList[i].newsThumbnail && itemList[i].newsThumbnail.replace(/\\/g,"/");            
+    //       }
+    //       self.setData({
+    //         items: itemList,
+    //         getMore: self.model.hasNextPage()
+    //       });
+    //     }
+
+    //   }
+    // });
   },
   pullListEnd:function(e){
     var self = this;

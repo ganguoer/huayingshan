@@ -1,3 +1,6 @@
+var articleDetails = require('../../data/articleDetails.js');
+
+
 var WxParse = require('../../wxParse/wxParse.js');
 var request = require("../../libs/proxy.js");
 var BaseModel = request.simpleCall;
@@ -19,30 +22,34 @@ Page({
     console.log(options.articleId);
     
     var id = options.articleId;
+    console.log(id)
     var self = this;
-    this.model = new BaseModel({
-      path: "/tscnews/info",
-      data: {
-        pkNews: id
-      },
-      success: function (res) {
-        console.log(res);
-        if (res.status == "SUCCESS") {
-          if (res.data) {
-            var articleInfo = res.data;
-            var txt = articleInfo.newsDescribe;
-            txt = txt.replace(/(\.)?(\.)?\/?\.?\.?\/(mapImages)?(\/)?(ueditor)?\/jsp\/upload\/image\//g, "https://mjw.citgroup.cn/ueditor/jsp/upload/image/");
-            WxParse.wxParse('article', 'html', txt, self, 5);
-            self.setData({
-              title: articleInfo.newsName,
-              time: articleInfo.infoModifiedtime
-            }
-            );
-          }
-        }
+    this.setData({
+      articleDetails: hotelData.postList[0].data.news
+    })
+    // this.model = new BaseModel({
+    //   path: "/tscnews/info",
+    //   data: {
+    //     pkNews: id
+    //   },
+    //   success: function (res) {
+    //     console.log(res);
+    //     if (res.status == "SUCCESS") {
+    //       if (res.data) {
+    //         var articleInfo = res.data;
+    //         var txt = articleInfo.newsDescribe;
+    //         txt = txt.replace(/(\.)?(\.)?\/?\.?\.?\/(mapImages)?(\/)?(ueditor)?\/jsp\/upload\/image\//g, "https://mjw.citgroup.cn/ueditor/jsp/upload/image/");
+    //         WxParse.wxParse('article', 'html', txt, self, 5);
+    //         self.setData({
+    //           title: articleInfo.newsName,
+    //           time: articleInfo.infoModifiedtime
+    //         }
+    //         );
+    //       }
+    //     }
 
-      }
-    });
+    //   }
+    // });
 
 
     // wx.request({
