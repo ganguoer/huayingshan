@@ -2,15 +2,15 @@
 <view id="content" class="tourDetail">
   <view>
     <view class="top">
-      <image class='bgimage' src='../../image/w-mall/guided.jpg'></image>
-      <image class="tourphoto" src='../../image/w-mall/dy_06.jpg'></image>
+      <image class='bgimage' src='http://zdp.citgroup.cn/image/w-mall/guided.jpg'></image>
+      <image class="tourphoto" src='http://zdp.citgroup.cn/image/w-mall/dy_06.jpg'></image>
     </view>
     <view class="tourname">东方</view>
     <view class="link">
       <view>
-        <image src='../../image/w-mall/tel.png'></image> 15932000248</view>
+        <image src='http://zdp.citgroup.cn/image/w-mall/tel.png'></image> 15932000248</view>
       <view class="weichart">
-        <image src='../../image/w-mall/wei.png'></image>微信交谈</view>
+        <image src='http://zdp.citgroup.cn/image/w-mall/wei.png'></image>微信交谈</view>
       <view></view>
     </view>
     <view class="link1">

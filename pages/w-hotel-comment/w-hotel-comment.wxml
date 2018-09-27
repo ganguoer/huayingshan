@@ -13,7 +13,7 @@
         <view class="comments">
                 <view class='commentList'>
                     <view class="comtop">
-                        <image class='comments' src='../../image/w-mall/comments.png'></image>
+                        <image class='comments' src='http://zdp.citgroup.cn/image/w-mall/comments.png'></image>
                         <text class="score">4.5</text>
                         <text class='name'>Jiali0517</text>
                     </view>
@@ -21,7 +21,7 @@
                     <text class='content_d' style='-webkit-box-orient: vertical;'>环境很好，有游泳池，早餐也不错，晚上很安静，就是出行一定要有车 才方便，最好先预约，不然价格优惠少， 性价比不错。环境很好，有游泳池，早餐也不错，晚上很安静，就是出行一定要有车才方便，最好先预约，不然价格优惠少，
                         性价比不错。环境很好，有游</text>
                     <view class="content_img">
-                        <image src="../../image/w-mall/hotel.jpg" ></image> 
+                        <image src="http://zdp.citgroup.cn/image/w-mall/hotel.jpg" ></image> 
                     </view>
                     <view class='reply'>
                         <text>酒店回复：感谢您对我们酒店的点评，我们会继续努力为您提供更加便捷幼稚的服务。期待您再次光临入住。</text>

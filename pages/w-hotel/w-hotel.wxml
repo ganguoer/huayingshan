@@ -2,7 +2,7 @@
 <view bindtouchend="pullListEnd" id="ListBody">
 <!--搜索部分 -->
 <view class="search-box">
-  <image class='icon-search' src='../../image/home/search.png'></image>
+  <image class='icon-search' src='http://zdp.citgroup.cn/image/home/search.png'></image>
   <input class="search-input" placeholder="请输入酒店名称" value="{{name}}" data-value = "{{name}}" placeholder-class="placeholder-style" bindinput="searchName" />
   <button class="search" disabled="{{disabled}}" bindtap='searchList'>搜索</button>
 </view>

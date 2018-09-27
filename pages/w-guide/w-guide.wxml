@@ -2,7 +2,7 @@
 <view bindtouchend="pullListEnd" id="ListBody">
 <!--搜索部分 -->
 <view class="search-box">
-   <image class='icon-search' src='../../image/home/search.png'></image>
+   <image class='icon-search' src='http://zdp.citgroup.cn/image/home/search.png'></image>
   <input class="search-input" placeholder="导游" value="{{name}}" placeholder-class="placeholder-style" bindinput="searchName" />
   <button class="search" disabled="{{disabled}}" bindtap='searchList'>搜索</button>
 </view>
@@ -22,11 +22,11 @@
               <text>销量:{{item.sales}} |  满意度：{{item.satisfyscore}}% </text>
               <view class="item-footer">
                 <view class="item-footer-author">
-                   <image class='star' src="../../image/w-mall/star.png"></image>
-                    <image class='star' src="../../image/w-mall/star.png"></image>
-                     <image class='star' src="../../image/w-mall/star.png"></image>
-                      <image class='star' src="../../image/w-mall/star.png"></image>
-                       <image class='star' src="../../image/w-mall/star.png"></image>
+                   <image class='star' src="http://zdp.citgroup.cn/image/w-mall/star.png"></image>
+                    <image class='star' src="http://zdp.citgroup.cn/image/w-mall/star.png"></image>
+                     <image class='star' src="http://zdp.citgroup.cn/image/w-mall/star.png"></image>
+                      <image class='star' src="http://zdp.citgroup.cn/image/w-mall/star.png"></image>
+                       <image class='star' src="http://zdp.citgroup.cn/image/w-mall/star.png"></image>
                   <text class='type'>{{item.grade}}分</text>
                 </view>
                 <view class="item-footer-view">

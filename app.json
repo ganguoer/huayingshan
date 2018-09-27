@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/dynamic/dynamic",
     "pages/index/index",
+    "pages/dynamic/dynamic",
     "pages/w-index/w-index",
     "pages/w-hotel/w-hotel",
     "pages/w-hotel-details/w-hotel-details",
@@ -25,8 +25,6 @@
     "pages/notices/notices",
     "pages/w-hotel-comment/w-hotel-comment",
     "pages/w-guide-details/w-guide-details"
-    
-
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -45,30 +43,30 @@
       {
         "pagePath": "pages/index/index",
         "iconPath": "image/footer/home-active.png",
-        "selectedIconPath": "image/footer/home-active.png",
+        "selectedIconPath": "image/footer/home.png",
         "text": "首页"
       },
       {
         "pagePath": "pages/dynamic/dynamic",
-        "iconPath": "image/footer/zixun.png",
+        "iconPath": "image/footer/zixun-active.png",
         "selectedIconPath": "image/footer/zixun.png",
         "text": "资讯"
       },
       {
         "pagePath": "pages/w-index/w-index",
-        "iconPath": "image/footer/mall.png",
+        "iconPath": "image/footer/mall-active.png",
         "selectedIconPath": "image/footer/mall.png",
         "text": "微商城"
       },
       {
         "pagePath": "pages/nav-byself/nav-byself",
-        "iconPath": "image/footer/guid.png",
+        "iconPath": "image/footer/guide-active.png",
         "selectedIconPath": "image/footer/guid.png",
         "text": "自导"
       },
       {
         "pagePath": "pages/my/my",
-        "iconPath": "image/footer/we.png",
+        "iconPath": "image/footer/we-active.png",
         "selectedIconPath": "image/footer/we.png",
         "text": "个人中心"
       }

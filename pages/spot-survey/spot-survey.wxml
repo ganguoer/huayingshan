@@ -109,5 +109,5 @@
 <view>
   <!-- <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" circles="{{circles}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange"
 show-location style="width: 100%; height: 300px;"></map> -->
-<image class='map' src='../../image/hys/map.jpg'></image>
+<image class='map' src='http://zdp.citgroup.cn/image/hys/map.jpg'></image>
 </view>

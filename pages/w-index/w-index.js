@@ -6,8 +6,8 @@ Page({
    */
   data: {
     imgUrls: [
-      "../../image/hys/swiper.png",
-      "../../image/hys/swiper.png"
+      "http://zdp.citgroup.cn/image/hys/swiper.png",
+      "http://zdp.citgroup.cn/image/hys/swiper.png"
     ]
   },
 

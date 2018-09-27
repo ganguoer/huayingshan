@@ -12,7 +12,7 @@ var local_guide = [
           price: "1288",
           sales:"2",
           satisfyscore: "99",
-          litpic: "../../image/w-mall/dy_06.jpg",
+          litpic: "http://zdp.citgroup.cn/image/w-mall/dy_06.jpg",
           grade: "5"
         },
         {
@@ -21,7 +21,7 @@ var local_guide = [
           price: "1088",
           sales: "2",
           satisfyscore: "99",
-          litpic: "../../image/w-mall/dy_09.jpg",
+          litpic: "http://zdp.citgroup.cn/image/w-mall/dy_09.jpg",
           grade: "5"
         },
         {
@@ -30,7 +30,7 @@ var local_guide = [
           price: "1188",
           sales: "2",
           satisfyscore: "99",
-          litpic: "../../image/w-mall/dy_13.jpg",
+          litpic: "http://zdp.citgroup.cn/image/w-mall/dy_13.jpg",
           grade: "5"
         },
         {
@@ -39,7 +39,7 @@ var local_guide = [
           price: "988",
           sales: "2",
           satisfyscore: "99",
-          litpic: "../../image/w-mall/dy_11.jpg",
+          litpic: "http://zdp.citgroup.cn/image/w-mall/dy_11.jpg",
           grade: "5"
         }
       ],

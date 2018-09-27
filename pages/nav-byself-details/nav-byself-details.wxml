@@ -1,6 +1,9 @@
+
+
 <view class = "nav-container" style = "width:100%;height:100%">
   <view class='map-container' style='height:{{mapHeight}}px'>
   <!-- <view class='mapCenterFlag' style='left:{{cLeft}}px;top:{{cTop}}px'></view> -->
+
     <!--地图区域  -->
     <view id = "imageControl"  class='imageControl' bindtouchstart='shiftStart' bindtouchend ='shiftTo' style='width:{{imageWidth}}px;height:{{imageHeight}}px;left:{{mapLeft}}px;top:{{mapTop}}px;transition:{{isAnimial ? "all 0.3s ease" : "none"}}'>
       <image src='{{mapUrl}}' mode='widthFix' 

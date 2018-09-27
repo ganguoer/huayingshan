@@ -10,9 +10,8 @@
 
 .dynamic-msg {
   position: relative;
-  padding-left: 24rpx;
-  padding-right: 24rpx;
-  padding-top: 30rpx;
+  padding: 30rpx;
+  padding-bottom: 0;
 }
 
 .dynamic-msg-header{
@@ -61,6 +60,7 @@
   font-size: 26rpx;
   padding-left:15rpx;
   padding-right:15rpx;
+  color: #666666;
 }
 
 
@@ -124,7 +124,7 @@
   display:block;
   position: absolute;
   font-size: 24rpx;
-  color:red;
+  color:#ee9906;
   right:0;
   bottom:0;
 }

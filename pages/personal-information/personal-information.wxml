@@ -3,7 +3,7 @@
 <view class='row'></view>
 <view class='order'  >
   <text class='my-order'>头像</text>
-  <image class='rightphoto' src='../../image/home/headPic.png'></image>
+  <image class='rightphoto' src='http://zdp.citgroup.cn/image/home/headPic.png'></image>
 </view>
 <view class='order'>
   <text class='my-order'>昵称</text>

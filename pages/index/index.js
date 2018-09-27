@@ -1,4 +1,4 @@
-var WxParse = require('../../wxParse/wxParse.js');
+
 Page({
 
   /**
@@ -6,8 +6,8 @@ Page({
    */
   data: {
     imgUrls: [
-      "../../image/hys/swiper.png",
-      "../../image/hys/swiper.png"
+      "http://zdp.citgroup.cn/image/hys/swiper.png",
+      "http://zdp.citgroup.cn/image/hys/swiper.png"
     ]
   },
 
@@ -21,23 +21,23 @@ Page({
     //   icon: "loading",
     //   duration: 10000
     // });
-    wx.request({ 
-      url: 'https://mjw.citgroup.cn/tscenic/selectSceniceInfoByApplet',
-      data: {
-        "pkScenic": "24"
-      },
-      method: 'POST',
-      header: {
-        'content-type': 'application/json'
-      },
-      success: function (res) {
-        wx.hideToast();
-        // console.log(res.data.data);
-        that.setData({
-          list: res.data.data
-        });
-      }
-    });      
+    // wx.request({ 
+    //   url: 'https://mjw.citgroup.cn/tscenic/selectSceniceInfoByApplet',
+    //   data: {
+    //     "pkScenic": "24"
+    //   },
+    //   method: 'POST',
+    //   header: {
+    //     'content-type': 'application/json'
+    //   },
+    //   success: function (res) {
+    //     wx.hideToast();
+    //     // console.log(res.data.data);
+    //     that.setData({
+    //       list: res.data.data
+    //     });
+    //   }
+    // });      
   },
 
   /**

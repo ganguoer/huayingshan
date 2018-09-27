@@ -11,7 +11,7 @@ var local_hotel=[
           title: "华蓥山大酒店",
           price: "464",
           satisfyscore: "100",
-          litpic: "../../image/w-mall/hotel-details.jpg",
+          litpic: "http://zdp.citgroup.cn/image/w-mall/hotel-details.jpg",
           hotelrankid: "3"
         },
         {
@@ -19,7 +19,7 @@ var local_hotel=[
           title: "华蓥山度假酒店",
           price: "268",
           satisfyscore: "100",
-          litpic: "../../image/w-mall/hotel-details.jpg",
+          litpic: "http://zdp.citgroup.cn/image/w-mall/hotel-details.jpg",
           hotelrankid: "3"
         },
         {
@@ -27,7 +27,7 @@ var local_hotel=[
           title: "华蓥山度假村",
           price: "1",
           satisfyscore: "100",
-          litpic: "../../image/w-mall/hotel-details.jpg",
+          litpic: "http://zdp.citgroup.cn/image/w-mall/hotel-details.jpg",
           hotelrankid: "4"
         },
         {
@@ -35,7 +35,7 @@ var local_hotel=[
           title: "华蓥山蓝莓庄园房车营地 ",
           price: "350",
           satisfyscore: "100",
-          litpic: "../../image/w-mall/hotel-details.jpg",
+          litpic: "http://zdp.citgroup.cn/image/w-mall/hotel-details.jpg",
           hotelrankid: "4"
         },
         {
@@ -43,7 +43,7 @@ var local_hotel=[
           title: "华蓥山商务酒店",
           price: "328",
           satisfyscore: "100",
-          litpic: "../../image/w-mall/hotel-details.jpg",
+          litpic: "http://zdp.citgroup.cn/image/w-mall/hotel-details.jpg",
           hotelrankid: "4"
         }
         

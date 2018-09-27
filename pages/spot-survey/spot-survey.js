@@ -1,10 +1,9 @@
 Page({
   data: {
     imgUrls: [
-      "../../image/hys/hys01.jpg",
-      "../../image/hys/hys01.jpg",
-      "../../image/hys/hys01.jpg",
-      "../../image/hys/hys01.jpg",
+      "http://zdp.citgroup.cn/image/hys/hys01.jpg",
+      "http://zdp.citgroup.cn/image/hys/hys01.jpg"
+    
     ],
     Height: 0,
     scale: 12,
@@ -13,7 +12,7 @@ Page({
     markers: [],
     controls: [{
       id: 1,
-      iconPath: '../../image/sub.png',
+      iconPath: 'http://zdp.citgroup.cn/image/sub.png',
       position: {
         left: 300,
         top: 100 - 50,
@@ -24,7 +23,7 @@ Page({
     },
     {
       id: 2,
-      iconPath: '../../image/add.png',
+      iconPath: 'http://zdp.citgroup.cn/image/add.png',
       position: {
         left: 330,
         top: 100 - 50,
@@ -69,7 +68,7 @@ Page({
             longitude: 103.3243775368,
             width: 20,
             height: 20,
-            iconPath: "../../image/location0.png",
+            iconPath: "http://zdp.citgroup.cn/image/location0.png",
             title: "石林"
 
           }],

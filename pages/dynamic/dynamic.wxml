@@ -17,9 +17,9 @@
  </view>
 
   <view wx:else>
-    <image src="../../image/22.jpg" class="imgtxt" />
+    <image src="http://zdp.citgroup.cn/image/22.jpg" class="imgtxt" />
     <view class="totalmsg">
-      <image src='../../image/location4.png' class="car_tip"></image>
+      <image src='http://zdp.citgroup.cn/image/location4.png' class="car_tip"></image>
       <view class="textps">
         <text> 华蓥山 hua Ying Mountain</text>
         <text> 进 000  出 000</text>
@@ -56,7 +56,7 @@
       </view>
     </view>
     <view class="weaters">
-      <image src="../../image/d.png" class='imgweater'></image>
+      <image src="http://zdp.citgroup.cn/image/d.png" class='imgweater'></image>
       <text class="hotstxt">
         <text class='dushu'>26C</text>
         <text class='yun'>多云  西北风</text>

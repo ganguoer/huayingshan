@@ -11,7 +11,7 @@ var local_ticket = [
           title: "华蓥山景区",
           price: "120",
           satisfyscore: "99",
-          litpic: "../../image/hys/hys01.jpg",
+          litpic: "http://zdp.citgroup.cn/image/hys/hys01.jpg",
           grade: "5"
         },
         {
@@ -19,7 +19,7 @@ var local_ticket = [
           title: "华蓥山景区",
           price: "80",
           satisfyscore: "99",
-          litpic: "../../image/hys/walk1.jpg",
+          litpic: "http://zdp.citgroup.cn/image/hys/walk1.jpg",
           grade: "5"
         },
         {
@@ -27,7 +27,7 @@ var local_ticket = [
           title: "华蓥山景区",
           price: "60",
           satisfyscore: "99",
-          litpic: "../../image/hys/walk2.jpg",
+          litpic: "http://zdp.citgroup.cn/image/hys/walk2.jpg",
           grade: "5"
         },
         {
@@ -35,7 +35,7 @@ var local_ticket = [
           title: "华蓥山景区",
           price: "40",
           satisfyscore: "99",
-          litpic: "../../image/hys/you1.jpg",
+          litpic: "http://zdp.citgroup.cn/image/hys/you1.jpg",
           grade: "5"
         },
         {
@@ -43,7 +43,7 @@ var local_ticket = [
           title: "华蓥山景区",
           price: "60",
           satisfyscore: "99",
-          litpic: "../../image/hys/you2.jpg",
+          litpic: "http://zdp.citgroup.cn/image/hys/you2.jpg",
           grade: "5"
         }
       ],

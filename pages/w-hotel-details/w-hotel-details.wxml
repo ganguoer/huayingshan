@@ -2,8 +2,8 @@
 <import src="../../wxParse/wxParse.wxml"/> 
  <!-- <view style="width:375rpx;"> -->
 <view class='d-top'>
-  <image class='hotel-details' src='../../image/w-mall/hotel-details.jpg'></image>
-  <image class='opacity' src='https://mjw.citgroup.cn/mapImages/image/w-mall/opacity.png'></image>
+  <image class='hotel-details' src='http://zdp.citgroup.cn/image/w-mall/hotel-details.jpg'></image>
+  <image class='opacity' src='http://zdp.citgroup.cn/image/w-mall/opacity.png'></image>
   <view class='title'>
     <text class="hotelName">华蓥山大酒店    </text>
     <text class='type'>高档型  2016年装修</text>
@@ -17,15 +17,15 @@
       <text class='comment'>185条点评</text>
     </view>
     <navigator class='comment-n' url='/pages/w-hotel-comment/w-hotel-comment' hover-class="none">点评
-      <!-- <image src="../../image/w-mall/arrow-right.png" /> -->
+      <!-- <image src="http://zdp.citgroup.cn/image/w-mall/arrow-right.png" /> -->
     </navigator>
 
   </view> 
   <view class="board-item">
-   <image class='add' src='../../image/w-mall/address.png'></image>
+   <image class='add' src='http://zdp.citgroup.cn/image/w-mall/address.png'></image>
     <text class='address'>位于瓦店乡华蓥山旅游区，近地质公园。</text>
     <!-- <navigator class='map' url="/page/navigate/navigate" hover-class="none">
-      <image src="../../image/w-mall/arrow-right.png" />
+      <image src="http://zdp.citgroup.cn/image/w-mall/arrow-right.png" />
     </navigator> -->
 
   </view>
@@ -43,7 +43,7 @@
   <view class="up-list">
     <view class="up-list-item">
       <view class="item-desc-container" bindtap="kindToggle">
-        <image class="item-img" src="../../image/w-mall/hotel.jpg"></image>
+        <image class="item-img" src="http://zdp.citgroup.cn/image/w-mall/hotel.jpg"></image>
         <view class="info-view">
           <text class="title-l">标准景观双床房</text>
           <view class="item-footer">
@@ -73,7 +73,7 @@
   <view class="up-list">
     <view class="up-list-item">
       <view class="item-desc-container" bindtap="kindToggle">
-        <image class="item-img" src="../../image/w-mall/hotel.jpg"></image>
+        <image class="item-img" src="http://zdp.citgroup.cn/image/w-mall/hotel.jpg"></image>
         <view class="info-view">
           <text class="title-l">豪华景观大床房</text>
           <view class="item-footer">
